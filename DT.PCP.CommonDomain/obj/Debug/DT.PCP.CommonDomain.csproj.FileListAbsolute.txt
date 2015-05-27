@@ -7,3 +7,12 @@ C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.CommonDomain\bin\Debug\DT.PCP.Se
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.CommonDomain\obj\Debug\DT.PCP.CommonDomain.csprojResolveAssemblyReference.cache
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.CommonDomain\obj\Debug\DT.PCP.CommonDomain.dll
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.CommonDomain\obj\Debug\DT.PCP.CommonDomain.pdb
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\bin\Debug\DT.PCP.CommonDomain.dll
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\bin\Debug\DT.PCP.CommonDomain.pdb
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\bin\Debug\DT.PCP.Domain.dll
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\bin\Debug\DT.PCP.ServicesProxies.dll
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\bin\Debug\DT.PCP.Domain.pdb
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\bin\Debug\DT.PCP.ServicesProxies.pdb
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\obj\Debug\DT.PCP.CommonDomain.csprojResolveAssemblyReference.cache
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\obj\Debug\DT.PCP.CommonDomain.dll
+C:\_repos\DT.PCP\DT.PCP.CommonDomain\obj\Debug\DT.PCP.CommonDomain.pdb

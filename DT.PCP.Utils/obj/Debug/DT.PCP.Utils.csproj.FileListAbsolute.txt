@@ -3,3 +3,8 @@ C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Utils\bin\Debug\DT.PCP.Utils.pdb
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Utils\obj\Debug\DT.PCP.Utils.dll
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Utils\obj\Debug\DT.PCP.Utils.pdb
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Utils\obj\Debug\DT.PCP.Utils.csprojResolveAssemblyReference.cache
+C:\_repos\DT.PCP\DT.PCP.Utils\bin\Debug\DT.PCP.Utils.dll
+C:\_repos\DT.PCP\DT.PCP.Utils\bin\Debug\DT.PCP.Utils.pdb
+C:\_repos\DT.PCP\DT.PCP.Utils\obj\Debug\DT.PCP.Utils.csprojResolveAssemblyReference.cache
+C:\_repos\DT.PCP\DT.PCP.Utils\obj\Debug\DT.PCP.Utils.dll
+C:\_repos\DT.PCP\DT.PCP.Utils\obj\Debug\DT.PCP.Utils.pdb

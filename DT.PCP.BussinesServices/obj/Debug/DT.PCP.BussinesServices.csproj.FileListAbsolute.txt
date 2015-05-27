@@ -9,3 +9,14 @@ C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PC
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.BussinesServices\obj\Debug\DT.PCP.BussinesServices.csprojResolveAssemblyReference.cache
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.BussinesServices\obj\Debug\DT.PCP.BussinesServices.dll
 C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.BussinesServices\obj\Debug\DT.PCP.BussinesServices.pdb
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PCP.BussinesServices.dll
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PCP.BussinesServices.pdb
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PCP.CommonDomain.dll
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PCP.Domain.dll
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PCP.ServicesProxies.dll
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PCP.CommonDomain.pdb
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PCP.Domain.pdb
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\bin\Debug\DT.PCP.ServicesProxies.pdb
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\obj\Debug\DT.PCP.BussinesServices.csprojResolveAssemblyReference.cache
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\obj\Debug\DT.PCP.BussinesServices.dll
+C:\_repos\DT.PCP\DT.PCP.BussinesServices\obj\Debug\DT.PCP.BussinesServices.pdb
