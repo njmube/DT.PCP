@@ -1,0 +1,62 @@
+﻿@using DT.PCP.Web.Resources.Views.Contact
+@{
+    ViewBag.Title = ContactViewsStrings.TitleContact;
+}
+
+<div class="span12">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>@ContactViewsStrings.TitleContact</h1>
+    </header>
+</div>
+
+<section class="contact" style="border-bottom: 5px solid #DEDEDE">
+    <div class="row-fluid">
+        <div class="span8" style="border-right: 4px solid #589FE2; margin-right: -7px; padding-right: 15px;">
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+            <div id="ymaps-map-id_136066455175760864151" style="width: auto; height: 350px;"></div>
+            <div style="width: auto; text-align: right;"><a href="http://api.yandex.ru/maps/tools/constructor/index.xml" target="_blank" style="color: #1A3DC1; font: 13px Arial, Helvetica, sans-serif;">Создано с помощью инструментов Яндекс.Карт</a></div>
+            <script type="text/javascript">function fid_136066455175760864151(ymaps) { var map = new ymaps.Map("ymaps-map-id_136066455175760864151", { center: [71.44160399999991, 51.16531703364631], zoom: 16, type: "yandex#map" }); map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"])); map.geoObjects.add(new ymaps.Placemark([71.441604, 51.164561], { balloonContent: "" }, { preset: "twirl#lightblueDotIcon" })); };</script>
+            <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_136066455175760864151"></script>
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+        </div>
+        <div class="span4">
+            <div class="span12" style="line-height: 30px;">
+                <span>@ContactViewsStrings.ContentAddressCountry, 010000,
+                    <br />@ContactViewsStrings.ContentAddressFull.<br />
+                    <span class="text-info"><strong>@ContactViewsStrings.ContentAddressBussinessCenter</strong></span></span>
+            </div>
+            <div class="span12">
+                <img src="@Url.Content("~/Images/contact-bc.png")" style="margin-top: -33px;"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row-fluid">
+        <div class="span8" style="border-right: 4px solid #589FE2; margin-right: -7px;">
+            <div class="sp1an3 cl1ear_mp label pull-left" style="height: 55px; width: 45%; text-align: center">
+
+                <img src="@Url.Content("~/Images/icon-phone.png")" style="height: 50px;"/>
+                <span style="font-size: 20px; vertical-align: middle;">8 (7172) 787 - 434</span>
+
+            </div>
+            <div class="spa1n3 cl1ear_mp pull-right label" style="height: 55px; margin-right: 15px; width: 45%; text-align: center">
+
+                <img src="@Url.Content("~/Images/icon-phone.png")" style="height: 50px;"/>
+                <span style="font-size: 20px; vertical-align: middle;">8 (7172) 787 - 344</span>
+
+            </div>
+        </div>
+
+        <div class="span4">
+            <div class="label spa1n3 " style="text-align: center; height: 55px; width: 100%;">
+                <div style="margin-top: 10px;">
+                    <img src="@Url.Content("~/Images/icon-mail.png")" style="height: 25px;"/>
+                <span style="font-size: 20px; vertical-align: middle;">info@naoplatu.kz</span>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</section>

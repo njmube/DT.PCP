@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B89F184-4397-4F32-9F1E-BFC82619C176}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DT.PCP.BussinesServices</RootNamespace>
+    <AssemblyName>DT.PCP.BussinesServices</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="INotificationService.cs" />
+    <Compile Include="INotificationSubscriptionService.cs" />
+    <Compile Include="IOsmpPaymentService.cs" />
+    <Compile Include="ISmsService.cs" />
+    <Compile Include="IViolationService.cs" />
+    <Compile Include="IEmailService.cs" />
+    <Compile Include="IEpayService.cs" />
+    <Compile Include="IOrderService.cs" />
+    <Compile Include="IUserService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DT.PCP.CommonDomain\DT.PCP.CommonDomain.csproj">
+      <Project>{469AB71E-E75C-4ABD-BAA5-796ABB201C3E}</Project>
+      <Name>DT.PCP.CommonDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.Domain\DT.PCP.Domain.csproj">
+      <Project>{4C1F51E6-0E8B-42C5-9856-DBE943B5D0C7}</Project>
+      <Name>DT.PCP.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.ServicesProxies\DT.PCP.ServicesProxies.csproj">
+      <Project>{D73496BE-4D83-4503-A756-EF3C6BBCA722}</Project>
+      <Name>DT.PCP.ServicesProxies</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

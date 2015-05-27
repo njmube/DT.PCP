@@ -1,0 +1,6 @@
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.ServicesProxies\bin\Debug\DT.PCP.ServicesProxies.dll.config
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.ServicesProxies\bin\Debug\DT.PCP.ServicesProxies.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.ServicesProxies\bin\Debug\DT.PCP.ServicesProxies.pdb
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.ServicesProxies\obj\Debug\DT.PCP.ServicesProxies.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.ServicesProxies\obj\Debug\DT.PCP.ServicesProxies.pdb
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.ServicesProxies\obj\Debug\DT.PCP.ServicesProxies.csprojResolveAssemblyReference.cache

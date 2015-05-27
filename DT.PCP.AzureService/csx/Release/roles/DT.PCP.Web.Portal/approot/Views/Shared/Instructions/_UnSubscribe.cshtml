@@ -1,0 +1,31 @@
+﻿@using DT.PCP.Web.Resources.Views.Shared
+@{
+    ViewBag.Title = "Как отписаться от уведомлений?";
+}
+
+<div class="span12">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>Как отписаться от уведомлений?</h1>
+    </header>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>
+<div class="span12">
+    <p>Если Вы больше не хотите получать уведомления о нарушениях, Вы можете отписаться от рассылки уведомлений. Для этого необходимо зайти в профиль и нажать кнопку <strong style="color: #5ca1e2;">"Уведомления"</strong></p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/notification-change-enter.png")"/>
+</div>
+<div class="span12">
+    <p>При нажатии на нее отображается форма данных для подписки</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/notification-change.png")"/>
+</div>
+<div class="span12">
+    <p>В открывшемся окне убрать "галочки" по тем видам подписки, которые Вы хотите удалить. После сохранения данных подписка по видам уведомлений, на которых убраны "галочки", перестает действовать.</p>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>

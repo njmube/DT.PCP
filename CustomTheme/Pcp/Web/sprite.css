@@ -1,0 +1,590 @@
+.dxWeb_rpHeaderTopLeftCorner_Pcp,
+.dxWeb_rpHeaderTopRightCorner_Pcp,
+.dxWeb_rpBottomLeftCorner_Pcp,
+.dxWeb_rpBottomRightCorner_Pcp,
+.dxWeb_rpTopLeftCorner_Pcp,
+.dxWeb_rpTopRightCorner_Pcp,
+.dxWeb_rpGroupBoxBottomLeftCorner_Pcp,
+.dxWeb_rpGroupBoxBottomRightCorner_Pcp,
+.dxWeb_rpGroupBoxTopLeftCorner_Pcp,
+.dxWeb_rpGroupBoxTopRightCorner_Pcp,
+.dxWeb_mHorizontalPopOut_Pcp,
+.dxWeb_mVerticalPopOut_Pcp,
+.dxWeb_mVerticalPopOutRtl_Pcp,
+.dxWeb_mSubMenuItem_Pcp,
+.dxWeb_mSubMenuItemChecked_Pcp,
+.dxWeb_mScrollUp_Pcp,
+.dxWeb_mScrollDown_Pcp,
+.dxWeb_tcScrollLeft_Pcp,
+.dxWeb_tcScrollRight_Pcp,
+.dxWeb_tcScrollLeftHover_Pcp,
+.dxWeb_tcScrollRightHover_Pcp,
+.dxWeb_tcScrollLeftPressed_Pcp,
+.dxWeb_tcScrollRightPressed_Pcp,
+.dxWeb_tcScrollLeftDisabled_Pcp,
+.dxWeb_tcScrollRightDisabled_Pcp,
+.dxWeb_nbCollapse_Pcp,
+.dxWeb_nbExpand_Pcp,
+.dxWeb_splVSeparator_Pcp,
+.dxWeb_splVSeparatorHover_Pcp,
+.dxWeb_splHSeparator_Pcp,
+.dxWeb_splHSeparatorHover_Pcp,
+.dxWeb_splVCollapseBackwardButton_Pcp,
+.dxWeb_splVCollapseBackwardButtonHover_Pcp,
+.dxWeb_splHCollapseBackwardButton_Pcp,
+.dxWeb_splHCollapseBackwardButtonHover_Pcp,
+.dxWeb_splVCollapseForwardButton_Pcp,
+.dxWeb_splVCollapseForwardButtonHover_Pcp,
+.dxWeb_splHCollapseForwardButton_Pcp,
+.dxWeb_splHCollapseForwardButtonHover_Pcp,
+.dxWeb_pcCloseButton_Pcp,
+.dxWeb_pcSizeGrip_Pcp,
+.dxWeb_pcSizeGripRtl_Pcp,
+.dxWeb_pPopOut_Pcp,
+.dxWeb_pPopOutDisabled_Pcp,
+.dxWeb_pAll_Pcp,
+.dxWeb_pAllDisabled_Pcp,
+.dxWeb_pPrev_Pcp,
+.dxWeb_pPrevDisabled_Pcp,
+.dxWeb_pNext_Pcp,
+.dxWeb_pNextDisabled_Pcp,
+.dxWeb_pLast_Pcp,
+.dxWeb_pLastDisabled_Pcp,
+.dxWeb_pFirst_Pcp,
+.dxWeb_pFirstDisabled_Pcp,
+.dxWeb_tvColBtn_Pcp,
+.dxWeb_tvColBtnRtl_Pcp,
+.dxWeb_tvExpBtn_Pcp,
+.dxWeb_tvExpBtnRtl_Pcp,
+.dxWeb_ncBackToTop_Pcp,
+.dxWeb_smBullet_Pcp,
+.dxWeb_tiBackToTop_Pcp,
+.dxWeb_fmFolder_Pcp,
+.dxWeb_fmFolderLocked_Pcp,
+.dxWeb_fmCreateButton_Pcp,
+.dxWeb_fmMoveButton_Pcp,
+.dxWeb_fmRenameButton_Pcp,
+.dxWeb_fmDeleteButton_Pcp,
+.dxWeb_fmRefreshButton_Pcp,
+.dxWeb_fmDwnlButton_Pcp,
+.dxWeb_fmCreateButtonDisabled_Pcp,
+.dxWeb_fmMoveButtonDisabled_Pcp,
+.dxWeb_fmRenameButtonDisabled_Pcp,
+.dxWeb_fmDeleteButtonDisabled_Pcp,
+.dxWeb_fmRefreshButtonDisabled_Pcp,
+.dxWeb_fmDwnlButtonDisabled_Pcp,
+.dxWeb_ucClearButton_Pcp,
+.dxWeb_ucClearButtonDisabled_Pcp { 
+    background-image: url('sprite.png');
+    -background-image: url('sprite.gif'); /* for IE6 */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    display:block;
+}
+.dxWeb_mScrollUp_Pcp, .dxWeb_mScrollDown_Pcp
+{
+	margin: auto;
+}
+.dxWeb_ncBackToTop_Pcp,
+.dxWeb_pPopOut_Pcp,
+.dxWeb_pPopOutDisabled_Pcp,
+.dxWeb_pAll_Pcp,
+.dxWeb_pAllDisabled_Pcp,
+.dxWeb_pPrev_Pcp,
+.dxWeb_pPrevDisabled_Pcp,
+.dxWeb_pNext_Pcp,
+.dxWeb_pNextDisabled_Pcp,
+.dxWeb_pLast_Pcp,
+.dxWeb_pLastDisabled_Pcp,
+.dxWeb_pFirst_Pcp,
+.dxWeb_pFirstDisabled_Pcp,
+.dxWeb_smBullet_Pcp,
+.dxWeb_tiBackToTop_Pcp
+{
+	display:inline;
+}
+
+.dxWeb_edtCheckBoxChecked_Pcp,
+.dxWeb_edtCheckBoxUnchecked_Pcp,
+.dxWeb_edtCheckBoxGrayed_Pcp,
+.dxWeb_edtCheckBoxCheckedDisabled_Pcp,
+.dxWeb_edtCheckBoxUncheckedDisabled_Pcp,
+.dxWeb_edtCheckBoxGrayedDisabled_Pcp {
+	background-image: url('sprite.png');
+    -background-image: url('sprite.gif'); /* for IE6 */
+    background-repeat: no-repeat;
+    background-color: transparent;
+	width: 15px;
+    height: 15px;
+}
+
+.dxWeb_edtCheckBoxUnchecked_Pcp {
+	background-position: -140px -73px;
+}
+.dxWeb_edtCheckBoxChecked_Pcp {
+	background-position: -140px -88px; 
+}
+.dxWeb_edtCheckBoxGrayed_Pcp {
+	background-position: -140px -103px;
+}
+.dxWeb_edtCheckBoxUncheckedDisabled_Pcp {
+	background-position: -140px -118px;
+}
+.dxWeb_edtCheckBoxCheckedDisabled_Pcp {
+	background-position: -140px -133px;
+}
+.dxWeb_edtCheckBoxGrayedDisabled_Pcp {
+	background-position: -140px -148px;
+}
+
+.dxWeb_rpHeaderTopLeftCorner_Pcp {
+    background-position: -76px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpHeaderTopRightCorner_Pcp {
+    background-position: -84px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpBottomLeftCorner_Pcp {
+    background-position: -57px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpBottomRightCorner_Pcp {
+    background-position: -65px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpTopLeftCorner_Pcp {
+    background-position: -38px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpTopRightCorner_Pcp {
+    background-position: -46px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpGroupBoxBottomLeftCorner_Pcp {
+    background-position: -19px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpGroupBoxBottomRightCorner_Pcp {
+    background-position: -27px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpGroupBoxTopLeftCorner_Pcp {
+    background-position: 0px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_rpGroupBoxTopRightCorner_Pcp {
+    background-position: -8px -90px;
+    width: 5px;
+    height: 5px;
+}
+
+.dxWeb_mHorizontalPopOut_Pcp {
+    background-position: -92px -40px;
+    width: 7px;
+    height: 4px;
+}
+
+.dxWeb_mVerticalPopOut_Pcp {
+    background-position: -101px -40px;
+    width: 4px;
+    height: 7px;
+}
+
+.dxWeb_mVerticalPopOutRtl_Pcp {
+    background-position: -106px -40px;
+    width: 4px;
+    height: 7px;
+}
+
+.dxWeb_mSubMenuItem_Pcp {
+    background-position: -63px -40px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxWeb_mSubMenuItemChecked_Pcp {
+    background-position: -77px -40px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxWeb_mScrollUp_Pcp {
+    background-position: -75px -59px;
+    width: 18px;
+    height: 18px;
+}
+
+.dxWeb_mScrollDown_Pcp {
+    background-position: -94px -59px;
+    width: 18px;
+    height: 18px;
+}
+
+.dxWeb_tcScrollLeft_Pcp {
+	background-position: -116px 0px;
+    width: 19px;
+    height: 15px;
+}
+
+.dxWeb_tcScrollRight_Pcp {
+	background-position: -137px 0px;
+    width: 19px;
+    height: 15px;
+}
+
+.dxWeb_tcScrollLeftHover_Pcp {
+	background-position: -116px -16px;
+    width: 19px;
+    height: 15px;
+}
+.dxWeb_tcScrollRightHover_Pcp {
+	background-position: -137px -16px;
+    width: 19px;
+    height: 15px;
+}
+
+.dxWeb_tcScrollLeftPressed_Pcp {
+	background-position: -116px -32px;
+    width: 19px;
+    height: 15px;
+}
+.dxWeb_tcScrollRightPressed_Pcp {
+	background-position: -137px -32px;
+    width: 19px;
+    height: 15px;
+}
+
+.dxWeb_tcScrollLeftDisabled_Pcp {
+	background-position: -116px -48px;
+    width: 19px;
+    height: 15px;
+}
+.dxWeb_tcScrollRightDisabled_Pcp  {
+	background-position: -137px -48px;
+    width: 19px;
+    height: 15px;
+}
+
+.dxWeb_nbCollapse_Pcp {
+    background-position: -101px 0px;
+    width: 13px;
+    height: 15px;
+}
+
+.dxWeb_nbExpand_Pcp {
+    background-position: -101px -16px;
+    width: 13px;
+    height: 15px;
+}
+
+.dxWeb_splVSeparator_Pcp {
+    background-position: -18px -59px;
+    width: 6px;
+    height: 22px;
+}
+
+.dxWeb_splVSeparatorHover_Pcp {
+    background-position: -25px -59px;
+    width: 6px;
+    height: 22px;
+}
+
+.dxWeb_splHSeparator_Pcp {
+    background-position: -33px -59px;
+    width: 23px;
+    height: 6px;
+}
+
+.dxWeb_splHSeparatorHover_Pcp {
+    background-position: -33px -66px;
+    width: 23px;
+    height: 6px;
+}
+
+.dxWeb_splVCollapseBackwardButton_Pcp {
+    background-position: 0px -73px;
+    width: 6px;
+    height: 7px;
+}
+
+.dxWeb_splVCollapseBackwardButtonHover_Pcp {
+    background-position: 0px -81px;
+    width: 6px;
+    height: 7px;
+}
+
+.dxWeb_splHCollapseBackwardButton_Pcp {
+    background-position: 0px -59px;
+    width: 7px;
+    height: 6px;
+}
+
+.dxWeb_splHCollapseBackwardButtonHover_Pcp {
+    background-position: 0px -66px;
+    width: 7px;
+    height: 6px;
+}
+
+.dxWeb_splVCollapseForwardButton_Pcp {
+    background-position: -8px -73px;
+    width: 6px;
+    height: 7px;
+}
+
+.dxWeb_splVCollapseForwardButtonHover_Pcp {
+    background-position: -8px -81px;
+    width: 6px;
+    height: 7px;
+}
+
+.dxWeb_splHCollapseForwardButton_Pcp {
+    background-position: -9px -59px;
+    width: 7px;
+    height: 6px;
+}
+
+.dxWeb_splHCollapseForwardButtonHover_Pcp {
+    background-position: -9px -66px;
+    width: 7px;
+    height: 6px;
+}
+
+.dxWeb_pcCloseButton_Pcp {
+    background-position: 0px -40px;
+    width: 29px;
+    height: 15px;
+}
+
+.dxWeb_pcSizeGrip_Pcp {
+    background-position: -34px -40px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxWeb_pcSizeGripRtl_Pcp {
+    background-position: -48px -40px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxWeb_pPopOut_Pcp {
+    background-position: -0px -115px;
+    width: 9px;
+    height: 8px;
+}
+
+.dxWeb_pPopOutDisabled_Pcp
+{
+    background-position: -19px -115px;
+    width: 9px;
+    height: 8px;
+}
+
+.dxWeb_pAll_Pcp {
+    background-position: 0px 0px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pAllDisabled_Pcp {
+    background-position: 0px -20px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pPrev_Pcp {
+    background-position: -60px 0px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pPrevDisabled_Pcp {
+    background-position: -60px -20px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pNext_Pcp {
+    background-position: -80px 0px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pNextDisabled_Pcp {
+    background-position: -80px -20px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pLast_Pcp {
+    background-position: -40px 0px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pLastDisabled_Pcp {
+    background-position: -40px -20px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pFirst_Pcp {
+    background-position: -20px 0px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_pFirstDisabled_Pcp {
+    background-position: -20px -20px;
+    width: 19px;
+    height: 18px;
+}
+
+.dxWeb_tvColBtn_Pcp {
+	background-position: -19px -98px;
+    width: 17px;
+    height: 17px;
+}
+.dxWeb_tvColBtnRtl_Pcp {
+	background-position: -57px -98px;
+    width: 17px;
+    height: 17px;
+}
+
+.dxWeb_tvExpBtn_Pcp {
+    background-position: 0px -98px;
+    width: 17px;
+    height: 17px;
+}
+.dxWeb_tvExpBtnRtl_Pcp {
+	background-position: -38px -98px;
+    width: 17px;
+    height: 17px;
+}
+
+.dxWeb_ncBackToTop_Pcp {
+    background-position: -58px -59px;
+    width: 15px;
+    height: 15px;
+}
+.dxWeb_smBullet_Pcp {
+    background-position: -33px -75px;
+    width: 8px;
+    height: 13px;
+}
+.dxWeb_tiBackToTop_Pcp {
+    background-position: -58px -59px;
+    width: 15px;
+    height: 15px;
+}
+
+.dxWeb_fmFolder_Pcp {
+	background-position: 0px -123px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmFolderLocked_Pcp {
+	background-position: -20px -123px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmCreateButton_Pcp {
+	background-position: -40px -123px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmRenameButton_Pcp {
+	background-position: -60px -123px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmMoveButton_Pcp {
+	background-position: -80px -123px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmDeleteButton_Pcp {
+	background-position: -100px -123px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmRefreshButton_Pcp {
+	background-position: -120px -123px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmDwnlButton_Pcp {
+	background-position: 0px -147px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_fmDwnlButtonDisabled_Pcp {
+	background-position: -20px -147px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmCreateButtonDisabled_Pcp {
+	background-position: -40px -147px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmRenameButtonDisabled_Pcp {
+	background-position: -60px -147px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmMoveButtonDisabled_Pcp {
+	background-position: -80px -147px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmDeleteButtonDisabled_Pcp {
+	background-position: -100px -147px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxWeb_fmRefreshButtonDisabled_Pcp {
+	background-position: -120px -147px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_ucClearButton_Pcp {
+    background-position: -100px -123px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_ucClearButtonDisabled_Pcp {
+    background-position: -100px -147px;
+    width: 16px;
+    height: 16px;
+}

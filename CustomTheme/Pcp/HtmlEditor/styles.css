@@ -1,0 +1,254 @@
+/* ----------------- Main ----------------- */
+/* Loading panel */
+.dxheLoadingDiv_Pcp
+{
+    background: White;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    cursor: wait;
+}
+.dxheLoadingPanel_Pcp
+{
+    font: 11px Verdana;
+    color: #201f35;
+}
+.dxheLoadingPanel_Pcp td.dx
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 7px 10px;
+}
+
+.dxheControl_Pcp
+{
+    border: 1px solid #9da0aa;
+}
+
+/* Area */
+.dxheContentArea_Pcp
+{
+    padding: 0;
+    background-color: #ebecef;
+}
+.dxheContentArea_Pcp .dxheErrorFrame_Pcp
+{
+    font-size: 11px;
+    font-family: Verdana;
+    color: #D00707;
+    background-color: #fbc7c7;
+    border-bottom: solid 1px #dec0c0;
+}
+.dxheContentArea_Pcp .dxheErrorFrame_Pcp .dxhe {
+    padding: 5px;
+}
+.dxheContentArea_Pcp .dxheErrorFrame_Pcp .dxhe td {
+    padding: 0px;
+}
+.dxheContentArea_Pcp .dxheErrorFrame_Pcp .dxheErrorFrameCloseButton_Pcp {
+    cursor: pointer;
+}
+.dxheControl_Pcp .dxheViewArea_Pcp
+{
+    border-width: 0;
+}
+
+.dxheHtmlViewArea_Pcp,
+.dxheDesignViewArea_Pcp,
+.dxhePreviewArea_Pcp
+{
+    margin: 0px;
+    background-color: White;
+    background-image: none;
+    font-size: smaller;
+    font: normal 12px Arial;
+}
+.dxheContentArea_Pcp .dxeMemo_Pcp td, 
+body.dxheDesignViewArea_Pcp, 
+body.dxhePreviewArea_Pcp
+{
+    padding: 4px 0 0 4px;
+}
+.dxheControl_Pcp.dxhe-rtl .dxheContentArea_Pcp .dxeMemo_Pcp td, 
+body.dxheDesignViewArea_Pcp.dxhe-rtl, 
+body.dxhePreviewArea_Pcp.dxhe-rtl
+{
+	padding: 0 4px 0 1px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .dxheControl_Pcp.dxhe-rtl .dxheContentArea_Pcp .dxeMemo_Pcp td
+    {
+	    padding: 0 0 0 4px;
+    }
+}
+.dxheControl_Pcp .dxeMemo_Pcp textarea 
+{
+	resize:none;
+}
+/* Element appearance in DesignView */
+body.dxheDesignViewArea_Pcp table.dxEmptyBorderTable,
+body.dxheDesignViewArea_Pcp table.dxEmptyBorderTable td
+{
+    border: 1px dotted Gray;
+}
+@media print
+{
+	body.dxheDesignViewArea_Pcp table.dxEmptyBorderTable,
+	body.dxheDesignViewArea_Pcp table.dxEmptyBorderTable td
+	{
+		border:0px;
+	}
+}
+
+/* Status Bar */
+.dxheStatusBar_Pcp
+{
+}
+.dxheStatusBar_Pcp .dxheStatusBarTab_Pcp
+{
+    padding-left: 34px;
+    padding-right: 35px;
+    padding-bottom: 5px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+.dxheControl_Pcp.dxhe-rtl .dxheStatusBar_Pcp .dxheStatusBarTab_Pcp
+{
+    border-left-width: 1px;
+    border-right-width: 0;
+}
+.dxheStatusBarActiveTab_Pcp
+{
+}
+.dxHtmlEditor_heSizeGrip_Pcp
+{
+    cursor: se-resize;
+}
+.dxHtmlEditor_heSizeGripRtl_Pcp
+{
+    cursor: ne-resize;
+}
+.dxheSizeGripContainer_Pcp
+{
+    float: left;
+    height: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+    margin-top: -13px;
+}
+.dxheControl_Pcp.dxhe-rtl .dxheSizeGripContainer_Pcp
+{
+	text-align: left;
+}
+.dxheStatusBar_Pcp .dxtcTabWithTabPositionBottom_Pcp
+{
+    background: #f1f2f6 url('SBTabBack.png') repeat-x left top;
+}
+.dxheStatusBar_Pcp .dxtcTabHoverWithTabPositionBottom_Pcp
+{
+    background: #f7f9fe url('SBTabHoverBack.png') repeat-x left top;
+}
+.dxheStatusBar_Pcp .dxtcRightAlignCell_Pcp
+{
+    background: #f1f2f6 url('SBTabBack.png') repeat-x left top;
+}
+
+/* ----------------- Dialog Forms ----------------- */
+#dxInsertTableForm .buttonsCell,
+#dxInsertLinkForm .buttonsCell,
+#dxInsertImageForm .buttonsCell,
+#dxPasteFromWordForm .buttonsCell,
+#dxTableColumnPropertiesForm .buttonsCell,
+.dxheCustomDialog_Pcp .dxhecd-Buttons
+{
+    background-color: #ebecef;
+    border-top: 1px solid #abacb9;
+    padding: 11px;
+}
+#dxInsertImageForm .imagePreviewCell
+{
+    color: #737373;
+    border: 1px dashed #cac8c8;
+}
+#dxPasteFromWordForm .pasteContainerCell td
+{
+	border: 1px solid #9da0aa;
+}
+
+/*----------------- Toolbars -----------------*/
+.dxtbSpacing_Pcp
+{
+	height: 1px;
+}
+.dxtbControl_Pcp
+{
+    font: 11px Verdana;
+    color: #201f35;
+    background: #f1f2f6 url('ToolbarBack.png') no-repeat right top;
+    width: 100%;
+    border-bottom: 1px solid #9da0aa;
+}
+.dxheControl_Pcp.dxhe-rtl .dxtbControl_Pcp 
+{
+	background: #f1f2f6 url('ToolbarBackRtl.png') no-repeat left top;
+}
+.dxtbControl_Pcp td.dxmMenu_Pcp
+{
+	border: 0;
+}
+.dxtbComboBoxMenuItem_Pcp
+{
+    padding: 2px 2px 1px;
+}
+
+/* Toolbars Lightweight Mode */
+.dxtbControl_Pcp .dxmLite_Pcp .dxm-main
+{
+    border-width: 0;
+}
+.dxmLite_Pcp .dxm-horizontal.dxmtb .dxtb-comboBoxMenuItem
+{
+	border-width: 0;
+	padding: 2px 2px 1px !important;
+}
+.dxtbControl_Pcp .dxmLite_Pcp .dxm-horizontal.dxmtb .dxm-image-l .dxm-dropDownMode.dxtb-cb .dxm-content, 
+.dxtbControl_Pcp .dxmLite_Pcp .dxm-horizontal.dxmtb .dxm-image-r .dxm-dropDownMode.dxtb-cb .dxm-content
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.dxtbControl_Pcp .dxmLite_Pcp .dxm-horizontal.dxmtb .dxm-image-l .dxm-item.dxtb-cddi .dxm-content, 
+.dxtbControl_Pcp .dxmLite_Pcp .dxm-horizontal.dxmtb .dxm-image-r .dxm-item.dxtb-cddi .dxm-content
+{
+	padding-top: 4px;
+	padding-bottom: 3px;
+}
+.dxtbControl_Pcp .dxmLite_Pcp .dxm-horizontal.dxmtb .dxm-image-l .dxm-item.dxtb-cddi .dxm-content img, 
+.dxtbControl_Pcp .dxmLite_Pcp .dxm-horizontal.dxmtb .dxm-image-r .dxm-item.dxtb-cddi .dxm-content img
+{
+	margin-top: -1px;
+}
+.dxmLite_Pcp .dxhetipControl_Pcp img
+{
+	vertical-align: top;
+}
+
+/* ToolbarColorButton */
+.dxtcbControl_Pcp
+{
+}
+.dxtcbColorDiv_Pcp
+{
+	width: 16px;
+	height: 3px;
+	font-size: 0px;
+	background-color: Transparent;
+}
+
+/*----------------- RoundPanel -----------------*/
+.dxheRP.dxrpControl_Pcp .dxrpcontent
+{
+    padding: 9px 8px;
+}
+

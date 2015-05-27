@@ -1,0 +1,270 @@
+.dxtlControl_Pcp
+{
+	cursor: default;
+	font: 11px Verdana;
+	color: #201f35;
+	border: 1px solid #9da0aa;
+	background: White url('CssImages/ControlBack.png') no-repeat right bottom;
+}
+.dxtlControl_Pcp caption
+{
+	font-weight: normal;
+	color: #201f35;
+	padding: 3px 3px 5px;
+	text-align: center;
+	background: #f2f3f4 url('CssImages/TitleBack.png') repeat-x left top;
+	border-bottom: 0 solid #cacbd3;
+	border: 1px solid #cacbd3;
+}
+
+/* Indent cells */
+.dxtlIndent_Pcp,
+.dxtlIndentWithButton_Pcp
+{
+	background: Transparent none;
+	vertical-align: top;
+}
+.dxtlIndent_Pcp
+{
+	padding: 0 11px;
+}
+.dxtlIndentWithButton_Pcp
+{
+	padding: 4px 5px;
+}
+.dxtlSelectionCell_Pcp
+{
+	border-width: 0;
+}
+
+/* Tree-lines cells */
+.dxtlLineRoot_Pcp,
+.dxtlLineFirst_Pcp,
+.dxtlLineMiddle_Pcp,
+.dxtlLineLast_Pcp,
+.dxtlLineFirstRtl_Pcp,
+.dxtlLineMiddleRtl_Pcp,
+.dxtlLineLastRtl_Pcp
+{
+	background-color: Transparent;
+}
+
+.dxtlIndent_Pcp,
+.dxtlIndentWithButton_Pcp
+{
+	background-color: Transparent;
+}
+
+/* Headers */
+.dxtlHeader_Pcp
+{
+	background: #f2f3f4 url('CssImages/HeaderBack.png') repeat-x left top;
+	border: 1px solid #cacbd3;
+	padding: 5px 6px;
+	font-weight: normal;
+	color: #201f35;
+}
+.dxtlHeader_Pcp table.dxtl
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+.dxtlHeader_Pcp td.dxtl
+{
+	padding: 0;
+}
+.dxtlHeader_Pcp,
+.dxtlHeader_Pcp td.dxtl
+{
+	white-space: nowrap;
+	text-align: left;
+}
+
+/* Nodes */
+.dxtlNode_Pcp
+{
+	background: Transparent none;
+}
+.dxtlAltNode_Pcp td.dxtl,
+.dxtlAltNode_Pcp .dxtlCommandCell_Pcp,
+.dxtlAltNode_Pcp .dxtlSelectionCell_Pcp
+{
+	background: url('CssImages/AltBack.png') left top;
+}
+.dxtlSelectedNode_Pcp td.dxtl,
+.dxtlSelectedNode_Pcp .dxtlCommandCell_Pcp,
+.dxtlSelectedNode_Pcp .dxtlSelectionCell_Pcp
+{
+	background: #eff0f2 none;
+	color: #201f35;
+}
+.dxtlFocusedNode_Pcp td.dxtl,
+.dxtlFocusedNode_Pcp .dxtlCommandCell_Pcp,
+.dxtlFocusedNode_Pcp .dxtlSelectionCell_Pcp
+{
+	background: #dde6fd url('CssImages/FocusedBack.png') repeat-x left top;
+	color: #201f35;
+}
+.dxtlAltNode_Pcp .dxtlIndent_Pcp,
+.dxtlSelectedNode_Pcp .dxtlIndent_Pcp,
+.dxtlFocusedNode_Pcp .dxtlIndent_Pcp
+{
+	background: Transparent none;
+}
+.dxtlInlineEditNode_Pcp
+{
+	background: Transparent none;
+}
+.dxtlEditFormDisplayNode_Pcp td.dxtl,
+.dxtlEditFormDisplayNode_Pcp .dxtlCommandCell_Pcp,
+.dxtlEditFormDisplayNode_Pcp .dxtlSelectionCell_Pcp
+{
+	background: #f9f9fc none;
+}
+
+.dxtlNode_Pcp td.dxtl,
+.dxtlAltNode_Pcp  td.dxtl,
+.dxtlSelectedNode_Pcp td.dxtl,
+.dxtlFocusedNode_Pcp td.dxtl,
+.dxtlEditFormDisplayNode_Pcp td.dxtl,
+.dxtlCommandCell_Pcp
+{
+	padding: 4px 6px;
+	border-width: 0;
+	white-space: nowrap;
+}
+.dxtlEditFormDisplayNode_Pcp td.dxtl,
+.dxtlEditFormDisplayNode_Pcp td.dxtl__cc
+{
+	border-bottom: 1px solid #d9dae0;
+}
+.dxtlInlineEditNode_Pcp td.dxtl
+{
+	border-width: 0;
+	padding: 1px;
+}
+
+/* Preview */
+.dxtlPreview_Pcp
+{
+	background: url('CssImages/PreviewBack.png') left top;
+	color: #777777;
+	padding: 14px;
+	border-width: 0;
+}
+
+/* Footers */
+.dxtlGroupFooter_Pcp td.dxtl,
+.dxtlFooter_Pcp td.dxtl
+{
+	background-color: #f9f9fc;
+	padding: 6px;
+	white-space: nowrap;
+	border-top: 1px solid #e1e1e9;
+	border-right: 1px solid #e1e1e9;
+	border-bottom: 1px solid #e1e1e9;
+	border-left-color: #e1e1e9;
+	border-left-style: solid;
+	border-left-width: 0!important;
+}
+
+/* Pagers */
+.dxtlPagerTopPanel_Pcp,
+.dxtlPagerBottomPanel_Pcp
+{
+	background: #f1f2f6 url('CssImages/PagerBack.png') left top;
+}
+.dxtlPagerTopPanel_Pcp
+{
+	border-bottom: 1px solid #cacbd3;
+}
+.dxtlPagerBottomPanel_Pcp
+{
+	border-top: 1px solid #cacbd3;
+}
+
+/* Editing */
+.dxtlEditForm_Pcp
+{
+	background: #f9f9fc none;
+	border-width: 0;
+	padding: 8px 10px 10px;
+}
+.dxtlEditFormCaption_Pcp,
+.dxtlEditFormEditCell_Pcp
+{
+	padding: 4px;
+}
+.dxtlEditFormCaption_Pcp
+{
+	padding-left: 10px;
+	white-space: nowrap;
+}
+.dxtlError_Pcp
+{
+	background-color: #ebecef;
+	color: #ba1717;
+	padding: 6px 10px;
+	border-width: 0;
+}
+.dxtlPopupEditForm_Pcp
+{
+	padding: 12px;
+}
+
+/* Links */
+.dxtlControl_Pcp a
+{
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxtlControl_Pcp a:hover
+{
+	text-decoration: underline;
+}
+
+.dxtlSelectedNode_Pcp a,
+.dxtlFocusedNode_Pcp a
+{
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxtlSelectedNode_Pcp a:hover,
+.dxtlFocusedNode_Pcp a:hover
+{
+	text-decoration: underline;
+}
+.dxtlCommandCell_Pcp a
+{
+	margin-right: 3px;
+}
+
+/* Loading panel */
+.dxtlLoadingPanel_Pcp
+{
+	font: 11px Verdana;
+	color: #201f35;
+	background: White none;
+	border: 1px solid #9da0aa;
+}
+.dxtlLoadingPanel_Pcp td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+.dxtlLoadingDiv_Pcp
+{
+	background: white none;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+
+/* Disabled */
+.dxtlDisabled_Pcp,
+.dxtlDisabled_Pcp .dxtl
+{
+	color: #b1b1b8;
+	cursor: default;
+}
+

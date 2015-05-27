@@ -1,0 +1,46 @@
+﻿@using System.Configuration
+@using DT.PCP.Web.Resources.Views.Shared
+<footer>
+    <div class="container">
+        <div class="row-fluid">
+            <div id="developed" class="span4" style="font-size: 16px">
+              
+                <p>2013 - @SharedViewsStrings.FooterDevelopedBy <a href="http://www.dtech.kz" target="_blank">&laquo;Dynamics Technologies&raquo;</a></p>
+                @* <div class="span3">
+                    <a href="http://dtech.kz"><img src="@Url.Content("~/Images/logo-footer.png")"/></a>
+                </div>*@
+            </div>
+            <div id="statistic" class="span5" style="height: 41px; background:url(@Url.Content("~/Images/statistic.png")) no-repeat; background-size: 100% auto; text-align: center; color:white">
+                УЖЕ ОПЛАЧЕННО @ViewData["PayedViolation"] @ViewData["DeclineNumber"].ToString().ToUpper()!
+            </div>
+            @*<div class="span4">
+                <div class="footer-col-2">
+                    <address>
+                        <i class="icon-map-marker"></i><strong>Dynamics Technologies</strong>
+                        <br>
+                        Республика Казахстан, 010000.
+							<br>
+                        город Астана
+							<br>
+                        улица Иманова 19, офис 806
+                    </address>
+                </div>
+            </div>*@
+            <div id="social-icon" class="span3 pull-right" style="margin-left: 0">
+                <div class="footer-col-3">
+                    <div class="share42init pull-right" data-url="@ConfigurationManager.AppSettings["SiteUrl"]" data-title="@ConfigurationManager.AppSettings["SiteName"]"></div>
+                    <script src="~/Scripts/share42.js"></script>
+                  
+                    @*<ul class="social">
+                        <li class="facebook"><a href="">Facebook</a></li>
+                        <li class="twitter"><a href="">Twitter</a></li>
+                        <li class="linkedin"><a href="">LinkedIn</a></li>
+                        <li class="youtube"><a href="">You Tube</a></li>
+                        <li class="dribble"><a href="">Twitter</a></li>
+                        <li class="rss"><a href="">RSS</a></li>
+                    </ul>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

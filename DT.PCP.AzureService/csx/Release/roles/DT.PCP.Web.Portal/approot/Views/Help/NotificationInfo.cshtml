@@ -1,0 +1,18 @@
+﻿@using DT.PCP.Web.Resources.Views.Help
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">@HelpViewsStrings.ModalNotificationInfoHeader</h3>
+</div>
+<div class="modal-body">
+    <div class="span10 clear_mp" style="text-align: justify; font-size: 16px;">
+        <p style="text-align: justify; color: black;">Сервис уведомлений позволяет Вам оперативно узнать о новом нарушении. Для подписки на уведомления необходимо ввести email и/или номер мобильного телефона и отметить соответствующие галочки. Для сохранения данных необходимо нажать кнопку <strong style="color: #5ca1e2;">&laquo;Сохранить&raquo;</strong>.</p>
+    </div>
+    <div class="span10" style="text-align: center">
+        <img src="@Url.Content("~/Images/notification-instr.png")"/>
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-large btn-primary" data-dismiss="modal">@HelpViewsStrings.ButtonClose</button>
+</div>

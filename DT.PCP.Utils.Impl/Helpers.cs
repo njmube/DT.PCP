@@ -1,0 +1,147 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.WindowsAzure.StorageClient;
+
+namespace DT.PCP.Utils.Impl
+{
+    public static class Helpers
+    {
+        public static IQueryable<T> IncludeMultiple<T>(this IQueryable<T> query, params Expression<Func<T, object>>[] includes)
+    where T : class
+        {
+            if (includes != null)
+            {
+                query = includes.Aggregate(query,
+                          (current, include) => current.Include(include));
+            }
+
+            return query;
+        }
+
+        public static int GetCode()
+        {
+            return new Random().Next(100000, 999999);
+        }
+
+        /// <summary>
+        /// Склоняет существительное в зависимости от числительного идущего перед ним.
+        /// </summary>
+        /// <param name="num">Число идущее перед существительным.</param>
+        /// <param name="normative">Именительный падеж слова.</param>
+        /// <param name="singular">Родительный падеж ед. число.</param>
+        /// <param name="plural">Множественное число.</param>
+        public static string Decline(this int num, string normative, string singular, string plural)
+        {
+            if (num > 10 && ((num % 100) / 10) == 1) return plural;
+
+            switch (num % 10)
+            {
+                case 1:
+                    return normative;
+                case 2:
+                case 3:
+                case 4:
+                    return singular;
+                default: // case 0, 5-9
+                    return plural;
+            }
+        }
+
+
+        /// <summary>
+        /// Преобразовывает поток в массив байт
+        /// </summary>
+        /// <param name="stream">Поток</param>
+        /// <returns>Массив байт</returns>
+        public static byte[] ReadToEnd(System.IO.Stream stream)
+        {
+            long originalPosition = 0;
+
+            if (stream.CanSeek)
+            {
+                originalPosition = stream.Position;
+                stream.Position = 0;
+            }
+
+            try
+            {
+                byte[] readBuffer = new byte[4096];
+
+                int totalBytesRead = 0;
+                int bytesRead;
+
+                while ((bytesRead = stream.Read(readBuffer, totalBytesRead, readBuffer.Length - totalBytesRead)) > 0)
+                {
+                    totalBytesRead += bytesRead;
+
+                    if (totalBytesRead == readBuffer.Length)
+                    {
+                        int nextByte = stream.ReadByte();
+                        if (nextByte != -1)
+                        {
+                            byte[] temp = new byte[readBuffer.Length * 2];
+                            Buffer.BlockCopy(readBuffer, 0, temp, 0, readBuffer.Length);
+                            Buffer.SetByte(temp, totalBytesRead, (byte)nextByte);
+                            readBuffer = temp;
+                            totalBytesRead++;
+                        }
+                    }
+                }
+
+                byte[] buffer = readBuffer;
+                if (readBuffer.Length != totalBytesRead)
+                {
+                    buffer = new byte[totalBytesRead];
+                    Buffer.BlockCopy(readBuffer, 0, buffer, 0, totalBytesRead);
+                }
+                return buffer;
+            }
+            finally
+            {
+                if (stream.CanSeek)
+                {
+                    stream.Position = originalPosition;
+                }
+            }
+        }
+
+        public static bool IsExistsBlob(CloudBlob blob)
+        {
+            try
+            {
+                blob.FetchAttributes();
+                return true;
+            }
+            catch (StorageClientException e)
+            {
+                if (e.ErrorCode == StorageErrorCode.ResourceNotFound)
+                {
+                    return false;
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static string GetPropertyName<T, TProp>(this T obj, Expression<Func<T, TProp>> expression)
+        {
+            var memberExp = expression.Body as MemberExpression;
+            if (memberExp != null)
+                return memberExp.Member.Name;
+
+            var methodExp = expression.Body as MethodCallExpression;
+            if (methodExp != null)
+                return methodExp.Method.Name;
+
+            throw new ArgumentException("'expression' should be a member expression or a method call expression.", "expression");
+        }
+
+    }
+}

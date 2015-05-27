@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7792E27B-1ACC-44FF-8EB4-E8F5FBCA2AB1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DT.PCP.Web.ViewModels</RootNamespace>
+    <AssemblyName>DT.PCP.Web.ViewModels</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lib.Web.Mvc">
+      <HintPath>..\packages\Lib.Web.Mvc.6.1.0\lib\net40\Lib.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\LoginViewModel.cs" />
+    <Compile Include="Cabinet\CarViolationDetailsViewModel.cs" />
+    <Compile Include="Cabinet\ConfirmationNotificationViewModel.cs" />
+    <Compile Include="Cabinet\NotificationViewModel.cs" />
+    <Compile Include="Cabinet\UserInfoViewModel.cs" />
+    <Compile Include="Cabinet\CarViolationViewModel.cs" />
+    <Compile Include="Cabinet\ViolationListViewModel.cs" />
+    <Compile Include="Home\HomeViewModel.cs" />
+    <Compile Include="Pay\ConfirmOrderViewModel.cs" />
+    <Compile Include="Pay\OrderViewModel.cs" />
+    <Compile Include="Pay\UserInfoConfirmationViewModel.cs" />
+    <Compile Include="Pay\TerminalPayInfoViewModel.cs" />
+    <Compile Include="Pay\VaucherViewModel.cs" />
+    <Compile Include="Pay\ViolationViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViolationNotificationModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DT.PCP.Domain\DT.PCP.Domain.csproj">
+      <Project>{4C1F51E6-0E8B-42C5-9856-DBE943B5D0C7}</Project>
+      <Name>DT.PCP.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.ServicesProxies\DT.PCP.ServicesProxies.csproj">
+      <Project>{D73496BE-4D83-4503-A756-EF3C6BBCA722}</Project>
+      <Name>DT.PCP.ServicesProxies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.Web.Core\DT.PCP.Web.Core.csproj">
+      <Project>{DB6D35AA-DA71-44F6-8142-91DE2ADBA736}</Project>
+      <Name>DT.PCP.Web.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.Web.Resources\DT.PCP.Web.Resources.csproj">
+      <Project>{9F6E765F-C9F2-4BF6-BC52-12E13BD6A320}</Project>
+      <Name>DT.PCP.Web.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+﻿@using DT.PCP.Web.Resources.Views.Shared
+@{
+    ViewBag.Title = "Как посмотреть данные о нарушениях?";
+}
+
+<div class="span12">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>Как посмотреть данные о нарушениях?</h1>
+    </header>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>
+<div class="span12">
+    <p>После ввода номера авто+номера тех. паспорта, либо номера авто+номера предписания, отображается страница <strong style="color: #5ca1e2;">&laquo;Список нарушений&raquo;</strong>, где есть две вкладки - Ваши <strong style="color: #5ca1e2;">&laquo;Новые&raquo;</strong> нарушения и <strong style="color: #5ca1e2;">&laquo;Оплаченные&raquo;</strong> нарушения.</p>
+    <p>Вы можете посмотреть детальную информацию о нарушении, нажав на строку с нарушением.</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/violation-list.png")"/>
+</div>
+<div class="span12">
+    <p>После чего откроется детальный просмотр выбранного нарушения, здесь же Вы можете сразу оплатить выбранное нарушение.</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/violation-details.png")"/>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>

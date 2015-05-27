@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Lib.Web.Mvc</id>
+    <version>6.1.0</version>
+    <title>Lib.Web.Mvc</title>
+    <authors>Tomasz Pęczek</authors>
+    <owners>Tomasz Pęczek</owners>
+    <licenseUrl>http://tpeczek.codeplex.com/license</licenseUrl>
+    <projectUrl>http://tpeczek.codeplex.com/</projectUrl>
+    <iconUrl>http://1.bp.blogspot.com/-We_Q5aF45F8/TYJ4uNd4gCI/AAAAAAAAAN8/_EtJ8zhZ8LI/s1600/nugeticon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Lib.Web.Mvc is a library which contains some helper classes for ASP.NET MVC such as strongly typed jqGrid helper, XSL transformation HtmlHelper/ActionResult, FileResult with range request support, custom attributes and more.</description>
+    <copyright>Copyright ©  2009 - 2012 Tomasz Pęczek</copyright>
+    <tags>MVC MVC3 ASP.NET jqGrid</tags>
+    <references>
+      <reference file="Lib.Web.Mvc.dll" />
+    </references>
+  </metadata>
+</package>

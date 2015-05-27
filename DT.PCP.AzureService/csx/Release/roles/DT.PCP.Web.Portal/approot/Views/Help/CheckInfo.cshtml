@@ -1,0 +1,18 @@
+﻿@using DT.PCP.Web.Resources.Views.Help
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">@HelpViewsStrings.ModalCheckInfoHeader</h3>
+</div>
+<div class="modal-body">
+    <div class="span10 clear_mp" style="text-align: justify; font-size: 16px;">
+        <p style="text-align: justify; color: black;">@HelpViewsStrings.ContentCheckInfo</p>
+    </div>
+    <div class="span10" style="text-align: center">
+         <img src="@Url.Content("~/Images/check-instr.png")"/>
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-large btn-primary" data-dismiss="modal">@HelpViewsStrings.ButtonClose</button>
+</div>

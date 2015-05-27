@@ -1,0 +1,134 @@
+.dxXtraReports_BtnFirstPage_Pcp,
+.dxXtraReports_BtnFirstPageDisabled_Pcp,
+.dxXtraReports_BtnLastPage_Pcp,
+.dxXtraReports_BtnLastPageDisabled_Pcp,
+.dxXtraReports_BtnNextPage_Pcp,
+.dxXtraReports_BtnNextPageDisabled_Pcp,
+.dxXtraReports_BtnPrevPage_Pcp,
+.dxXtraReports_BtnPrevPageDisabled_Pcp,
+.dxXtraReports_BtnPrint_Pcp,
+.dxXtraReports_BtnPrintDisabled_Pcp,
+.dxXtraReports_BtnPrintPage_Pcp,
+.dxXtraReports_BtnPrintPageDisabled_Pcp,
+.dxXtraReports_BtnSave_Pcp,
+.dxXtraReports_BtnSaveDisabled_Pcp,
+.dxXtraReports_BtnSaveWindow_Pcp,
+.dxXtraReports_BtnSaveWindowDisabled_Pcp,
+.dxXtraReports_BtnSearch_Pcp,
+.dxXtraReports_BtnSearchDisabled_Pcp 
+{
+    background-image: url('sprite.png');
+    -background-image: url('sprite.gif'); /* for IE6 */
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.dxXtraReports_BtnFirstPage_Pcp {
+    background-position: -16px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnFirstPageDisabled_Pcp {
+    background-position: -16px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnLastPage_Pcp {
+    background-position: -32px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnLastPageDisabled_Pcp {
+    background-position: -32px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnNextPage_Pcp {
+    background-position: -64px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnNextPageDisabled_Pcp {
+    background-position: -64px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnPrevPage_Pcp {
+    background-position: -48px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnPrevPageDisabled_Pcp {
+    background-position: -48px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnPrint_Pcp {
+    background-position: -80px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnPrintDisabled_Pcp {
+    background-position: -80px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnPrintPage_Pcp {
+    background-position: -96px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnPrintPageDisabled_Pcp {
+    background-position: -96px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnSave_Pcp {
+    background-position: -112px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnSaveDisabled_Pcp {
+    background-position: -112px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnSaveWindow_Pcp {
+    background-position: -128px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnSaveWindowDisabled_Pcp {
+    background-position: -128px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnSearch_Pcp {
+    background-position: 0px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.dxXtraReports_BtnSearchDisabled_Pcp {
+    background-position: 0px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+

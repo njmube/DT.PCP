@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = CabinetViewsStrings.TitleViolationList;
+}
+@using DT.PCP.Web.Resources.Views.Cabinet
+@model DT.PCP.Web.ViewModels.Cabinet.ViolationListViewModel
+<script src="~/Scripts/PCP/Cabinet.js"></script>
+<div class="row">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>@CabinetViewsStrings.TitleViolationList</h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+        <span>
+            <a href="@Url.Action("Info", "Cabinet")" style="color: #5CA1E2">@Model.CarNumber</a> @Model.CarMark, @Model.CarColor
+        </span>
+        <ul class="nav nav-tabs">
+            <li class="active">
+               
+                <a href="@Url.Action("ViolationList", "Cabinet")">@CabinetViewsStrings.TabNewViolation</a>
+            </li>
+            <li>
+                <a href="@Url.Action("ViolationList", "Cabinet", new {payed = true})">@CabinetViewsStrings.TabPayedViolation</a>
+            </li>
+        </ul>
+        <div class="row-fluid" style="padding: 10px; padding-bottom: 0; background-color: #dddddd">
+            <input id="search_query" style="width: 65.565%; margin-right: -5px" class="span7 pull-left" placeholder="@CabinetViewsStrings.ContentViolationListSearchPlaceholder" type="text" />
+            <button id="violation_search" class="btn span2 btn-primary pull-right" type="button">@CabinetViewsStrings.ButtonViolationListSearch</button>
+            <button id="clear_search" class="btn span2 btn-primary pull-right" type="button">@CabinetViewsStrings.ButtonViolationListClear</button>
+        </div>
+        <div id="tab_content">
+            @Html.Partial("_Violation", Model.Violations)
+        </div>
+        @if (ViewData["Payed"] == null || !(bool)ViewData["Payed"])
+        {
+            <div class="pull-right" style="margin-top: 15px">
+                <button id="pay_penalty" class="btn btn-large btn-primary span">@CabinetViewsStrings.ButtonViolationListPay</button>
+            </div>
+        }
+
+    </div>
+</div>

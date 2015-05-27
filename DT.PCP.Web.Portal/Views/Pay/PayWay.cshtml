@@ -1,0 +1,65 @@
+﻿@using System.Configuration
+@using DT.PCP.Web.Resources.Views.Pay
+@{
+    ViewBag.Title = PayViewsStrings.TitlePayWay;
+}
+
+<div class="row-fluid">
+    <div class="span12">
+        <header style="text-align: center; margin-bottom: 35px">
+            <h1>@PayViewsStrings.TitlePayWay</h1>
+        </header>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="card-way pull-left span6" style="text-align: center">
+        <div>
+            <input type="button" class="btn btn-large btn-primary" style="width: 470px" id="pay_way_card" value="@PayViewsStrings.ButtonCreditCard"/>
+        </div>
+        <div style="margin-top: 15px;">
+            <img src="@Url.Content("~/Images/cards.png")"/>
+        </div>
+         <div style="text-align: justify">
+            <p>@Html.Raw(PayViewsStrings.ContentPayWayCardPayDescription)</p>
+        </div>
+    </div>
+    
+    <div class="terminal-way pull-right span6" style="text-align: center">
+        <div>
+            <input type="button" class="btn btn-large btn-primary" style="width: 470px" id="pay_way_terminal" value="@PayViewsStrings.ButtonTerminal"/>
+        </div>
+        <div style="margin-top: 15px;">
+            <img src="@Url.Content("~/Images/terminal.png")"/>
+        </div>
+        <div style="text-align: justify">
+             <p>@Html.Raw(PayViewsStrings.ContentPayWayTerminalPayDescription)</p>
+        </div>
+        
+    </div>
+    
+
+    @*<div class="span6" style="text-align: center">
+
+        <input type="button" class="btn btn-large btn-primary" style="width: 470px" id="pay_way_card" value="@PayViewsStrings.ButtonCreditCard"/>
+
+        <div class="span5" style="margin-top: 15px; margin-left: 40px;">
+            <img src="@Url.Content("~/Images/cards.png")"/>
+        </div>
+        <div class="span5" style="text-align: justify; margin-left: 40px;">
+            <p>Вы можете оплатить <span class="text-info"><strong>БАНКОВСКИМИ КАРТАМИ</strong></span> (Visa, MasterCard, Cirrus Maestro) через платежную систему E-Pay</p>
+        </div>
+    </div>*@
+    @*<div class="span6" style="text-align: center">
+        <form>
+            <input class="btn btn-large btn-primary" style="width: 470px" type="button" id="pay_way_terminal" value="@PayViewsStrings.ButtonTerminal"/>
+        </form>
+        <div class="span5" style="margin-top: -5px; margin-left: 40px;">
+            <img src="@Url.Content("~/Images/terminal.png")"/>
+        </div>
+        <div class="span5" style="text-align: justify; margin-left: 40px;">
+            <p>Вы можете оплатить нарушение при помощи <span class="text-info"><strong>ПЛАТЕЖНОГО ТЕРМИНАЛА</strong></span>, которые находятся в большинстве магазинах и супермаркетах, торгово-развлекательных центрах и административных зданиях.</p>
+        </div>
+    </div>*@
+</div>
+<script src="~/Scripts/PCP/Pay.js"></script>

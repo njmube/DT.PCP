@@ -1,0 +1,79 @@
+﻿@using DT.PCP.Web.Resources.Views.Tariff
+@{
+    ViewBag.Title = TariffVewsStrings.TitleTariff;
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('body').addClass('pricing-page');
+        $('.pricing-table').closest('.container').removeClass('container');
+        $('.hero-unit').css('padding-left', '0').css('padding-right', '0');
+        $('.btn-large').css('padding', '11px');
+    })
+</script>
+<section class="pricing-table">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <header>
+                    <h1>@TariffVewsStrings.TitleTariff</h1>
+                </header>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="module mod-pricing">
+                    <header>
+                        <h2 style="font-weight: 400; color: #454545">@TariffVewsStrings.ContentPayCard</h2>
+                        @*<span class="fee">$10/month</span>*@
+                    </header>
+                    <div class="mod-body">
+                        <ul class="feature-list">
+                             @Html.Raw(TariffVewsStrings.ContentPayCardDescription)
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span3">
+                <div class="module mod-pricing">
+                    <header>
+                        <h2 style="font-weight: 400; color: #454545">@TariffVewsStrings.ContentPayTerminal</h2>
+                        @* <span class="fee">$20/month</span>*@
+                    </header>
+                    <div class="mod-body">
+                        <ul class="feature-list">
+                            @Html.Raw(TariffVewsStrings.ContentPayTerminalDescription)
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span3">
+                <div class="module mod-pricing">
+                    <header style="margin-bottom: -7px;">
+                        <h2 style="font-weight: 400; color: #454545">@TariffVewsStrings.ContentPayEMoney</h2>
+                    </header>
+                    <div class="mod-body">
+                        <img src="@Url.Content("~/Images/tariff-soon.png")"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span3">
+                <div class="module mod-pricing">
+                    <header>
+                        <h2 style="font-weight: 400; color: #454545">@TariffVewsStrings.ContentSmsNotification</h2>
+                        @* <span class="fee">Call Us.</span>*@
+                    </header>
+                    <div class="mod-body">
+                        <ul class="feature-list">
+                            @Html.Raw(TariffVewsStrings.ContentSmsNotificationDescription)
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="DT.PCP.AzureService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
+  <WebRole name="DT.PCP.Web.Portal" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+    <Certificates>
+      <Certificate name="WcfClient" storeLocation="LocalMachine" storeName="My" />
+      <Certificate name="WcfServer" storeLocation="LocalMachine" storeName="TrustedPeople" />
+      <Certificate name="WCFCA" storeLocation="LocalMachine" storeName="CA" />
+    </Certificates>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="ViolationImagesContainer" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+  </WebRole>
+  <WorkerRole name="DT.PCP.ViolationNotificationWorker" vmsize="Small">
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+    </Imports>
+    <Certificates>
+      <Certificate name="WcfClient" storeLocation="LocalMachine" storeName="My" />
+      <Certificate name="WcfServer" storeLocation="LocalMachine" storeName="TrustedPeople" />
+      <Certificate name="WCFCA" storeLocation="LocalMachine" storeName="CA" />
+    </Certificates>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole>
+</ServiceDefinition>

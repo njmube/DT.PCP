@@ -1,0 +1,22 @@
+﻿@using DT.PCP.Web.Resources.Views.Shared
+@{
+    ViewBag.Title = "Как узнать прошла ли проплата штрафа?";
+}
+
+<div class="span12">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>Как узнать прошла ли проплата штрафа?</h1>
+    </header>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>
+<div class="span12">
+    <p>После того, как оплата нарушения успешно совершена, на email, указанный в профиле собственника авто, приходит уведомление, содержащее сведения об авто, нарушении и оплате.</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/vaucher.png")"/>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>

@@ -1,0 +1,47 @@
+﻿@using DT.PCP.Web.Resources.Views.Cabinet
+@model DT.PCP.Web.ViewModels.Cabinet.UserInfoViewModel
+<div class="span3" style="margin: 10px 0px 0px 10px; padding: 0;">
+    <img src="@Url.Content("~/Images/avatar.png")" style="height: 163px"></img>
+</div>
+<div class="span8">
+    @if (!string.IsNullOrWhiteSpace(Model.FullName))
+    {
+        <div class="span12" style="margin: 0;">
+            <span class="pull-left" style="font-size: 20px;"><strong>@Html.DisplayTextFor(m => m.FullName)</strong></span>
+        </div>
+                }
+    @if (!string.IsNullOrWhiteSpace(Model.ArtificialPerson))
+    {
+        <div class="span12" style="margin: 0;">
+            <span class="pull-left" style="font-size: 20px;"><strong>@Html.DisplayTextFor(m => m.ArtificialPerson)</strong></span>
+        </div>
+                }
+
+    <div class="span12" style="margin: 0;">
+        <span class="pull-left">
+            <img src="@Url.Content("~/Images/email.png")"></img></span>
+        <span class="pull-left" style="margin-left: 10px; font-size: 9pt;">@Html.DisplayTextFor(m => m.Email)</span>
+    </div>
+
+    <div class="span12" style="line-height: 12px; margin: 0;">
+        <span class="pull-left">
+            <img src="@Url.Content("~/Images/phone.png")"></img></span>
+        <span class="pull-left" style="margin-left: 10px; font-size: 9pt;">@Html.DisplayTextFor(m => m.PhoneNumber)</span>
+    </div>
+
+    <div class="span12" style="margin: 0; margin-top: 0;">
+        <span class="pull-left">@CabinetViewsStrings.ContentInfoPartialCarNumber <strong>@Html.DisplayTextFor(m => m.CarNumber)</strong> @Html.DisplayTextFor(m => m.CarMark), @Html.DisplayTextFor(m => m.CarColor)</span>
+    </div>
+
+    <div class="span12" style="margin: 0; margin-top: 5px;">
+        <span class="pull-left" style="font-size: 13px;">@CabinetViewsStrings.ContentInfoPartialAddressRegistration:</span>
+    </div>
+
+    <div class="span12" style="line-height: 22px; margin: 0;">
+        <span class="pull-left">@Html.DisplayTextFor(m => m.CarRegistrationAddress)</span>
+    </div>
+</div>
+
+<div class="span12" align="center" style="margin-top: 15px; text-align: center">
+    <span style="text-align: center; font-size: 15px;"><strong>@Html.DisplayTextFor(m => m.CarPassportNumber)</strong></span>
+</div>

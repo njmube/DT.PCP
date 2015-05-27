@@ -1,0 +1,21 @@
+﻿@if (Request.IsAuthenticated) {
+    <text>
+        Hello, @Html.ActionLink(User.Identity.Name, "Index", "Cabinet", routeValues: null, htmlAttributes: new { @class = "username", title = "Личный кабинет" })!
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
+            @Html.AntiForgeryToken()
+            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+        }
+    </text>
+} else {
+    <ul>
+        <li>@Html.ActionLink("Ввойти", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
+
+@Html.ActionLink("eng", "ChangeCulture", "Account",
+    new { lang = (int)DT.PCP.CommonDomain.Culture.En, returnUrl =  
+    this.Request.RawUrl }, new { @class = "culture-link" })
+
+@Html.ActionLink("рус", "ChangeCulture", "Account",
+    new { lang = (int)DT.PCP.CommonDomain.Culture.Ru, returnUrl = 
+    this.Request.RawUrl }, new { @class = "culture-link" })

@@ -1,0 +1,27 @@
+﻿@using DT.PCP.Web.Resources.Views.Pay
+@model DT.PCP.Web.ViewModels.Pay.UserInfoConfirmationViewModel
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">@PayViewsStrings.HeaderUserConfirmation</h3>
+</div>
+
+<div class="modal-body">
+    <div>
+        <form id="pay_user_confirm" method="POST">
+            <div class="pull-left">
+                @Html.LabelFor(m => m.Email)
+                @Html.TextBox("email", Model.Email)
+                @*<div>@Html.ValidationMessageFor(m => m.Email)</div>*@
+            </div>
+            <div class="pull-right">
+                @Html.LabelFor(m => m.TaxNumber)
+                @Html.TextBoxFor(m => m.TaxNumber)
+                @*<div>@Html.ValidationMessageFor(m => m.TaxNumber)</div>*@
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal-footer">
+    <input class="btn btn-large btn-primary" id="pay_confirm_user_info" type="submit" value="@PayViewsStrings.ButtonConfirmInfo" />
+</div>

@@ -1,0 +1,12 @@
+﻿@using DT.PCP.Web.Resources.Views.Home
+@model DT.PCP.Web.ViewModels.Home.HomeViewModel
+<div style="line-height: 20px">
+    <form>
+        <input id="car_number_1" type="text" rel="tooltip" data-placement="top" data-trigger="manual" data-title="@HomeViewsStrings.ValidationCarNumber" placeholder="@HomeViewsStrings.PlaceholderCarNumber" name="car_number" style="margin-top: 15px" />
+        <input id="car_order_number" type="text" rel="tooltip" data-placement="top" data-trigger="manual" data-title="@HomeViewsStrings.ValidationCarPassportNumber" placeholder="@HomeViewsStrings.PlaceholderOrderNumber" name="car_number" style="margin-top: 15px" />
+    </form>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

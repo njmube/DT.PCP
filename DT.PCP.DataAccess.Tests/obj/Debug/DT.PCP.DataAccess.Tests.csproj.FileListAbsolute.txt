@@ -1,0 +1,4 @@
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.DataAccess.Tests\bin\Debug\DT.PCP.DataAccess.Tests.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.DataAccess.Tests\bin\Debug\DT.PCP.DataAccess.Tests.pdb
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.DataAccess.Tests\obj\Debug\DT.PCP.DataAccess.Tests.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.DataAccess.Tests\obj\Debug\DT.PCP.DataAccess.Tests.pdb

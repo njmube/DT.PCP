@@ -1,0 +1,271 @@
+02/12/2013 14:10:41: A967DTP
+02/12/2013 14:10:41: AN00153053
+02/12/2013 14:10:42: GetUserFromService: Ќе удалось получить данные от сервиса
+02/12/2013 14:10:42: TsNotFound
+02/12/2013 14:10:42: 
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at DT.PCP.ServicesProxies.BddViolationService.ITrafficViolationService.GetTransportOwner(String grnz, String srts)
+   at DT.PCP.ServicesProxies.BddViolationService.TrafficViolationServiceClient.GetTransportOwner(String grnz, String srts) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.ServicesProxies\Service References\BddViolationService\Reference.cs:line 781
+   at DT.PCP.BussinesServices.Impl.ViolationService.GetOwnerInfo(String carNumber, String carPassportNumber) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\ViolationService.cs:line 31
+   at DT.PCP.BussinesServices.Impl.UserService.GetUserFromService(String carNumber, String carPassportNumber, Int32 userId) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\UserService.cs:line 102
+02/12/2013 14:10:42: mscorlib
+02/13/2013 16:52:41: A967DTP
+02/13/2013 16:52:41: AN00153053
+02/13/2013 18:41:21: is confirmed in bdd:True
+02/13/2013 18:44:53: is confirmed in bdd:True
+02/14/2013 09:46:38: GetViolations: 
+02/15/2013 14:01:23: A967DTP
+02/15/2013 14:01:23: AN00153053
+02/15/2013 14:01:31: GetUserFromService: Ќе удалось получить данные от сервиса
+02/15/2013 14:01:31: TsNotFound
+02/15/2013 14:01:31: 
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at DT.PCP.ServicesProxies.BddViolationService.ITrafficViolationService.GetTransportOwner(String grnz, String srts)
+   at DT.PCP.ServicesProxies.BddViolationService.TrafficViolationServiceClient.GetTransportOwner(String grnz, String srts) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.ServicesProxies\Service References\BddViolationService\Reference.cs:line 836
+   at DT.PCP.BussinesServices.Impl.ViolationService.GetOwnerInfo(String carNumber, String carPassportNumber) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\ViolationService.cs:line 31
+   at DT.PCP.BussinesServices.Impl.UserService.GetUserFromService(String carNumber, String carPassportNumber, Int32 userId) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\UserService.cs:line 103
+02/15/2013 14:01:31: mscorlib
+02/15/2013 14:01:57: A967DTP
+02/15/2013 14:01:58: AN00153053
+02/15/2013 14:09:17: GetUserFromService: Ќе удалось получить данные от сервиса
+02/15/2013 14:09:17: TsNotFound
+02/15/2013 14:09:17: 
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at DT.PCP.ServicesProxies.BddViolationService.ITrafficViolationService.GetTransportOwner(String grnz, String srts)
+   at DT.PCP.ServicesProxies.BddViolationService.TrafficViolationServiceClient.GetTransportOwner(String grnz, String srts) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.ServicesProxies\Service References\BddViolationService\Reference.cs:line 836
+   at DT.PCP.BussinesServices.Impl.ViolationService.GetOwnerInfo(String carNumber, String carPassportNumber) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\ViolationService.cs:line 31
+   at DT.PCP.BussinesServices.Impl.UserService.GetUserFromService(String carNumber, String carPassportNumber, Int32 userId) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\UserService.cs:line 103
+02/15/2013 14:09:17: mscorlib
+02/15/2013 15:08:17: A967DTP
+02/15/2013 15:08:17: AN00153053
+02/15/2013 15:08:25: GetUserFromService: Ќе удалось получить данные от сервиса
+02/15/2013 15:08:25: TsNotFound
+02/15/2013 15:08:25: 
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at DT.PCP.ServicesProxies.BddViolationService.ITrafficViolationService.GetTransportOwner(String grnz, String srts)
+   at DT.PCP.ServicesProxies.BddViolationService.TrafficViolationServiceClient.GetTransportOwner(String grnz, String srts) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.ServicesProxies\Service References\BddViolationService\Reference.cs:line 852
+   at DT.PCP.BussinesServices.Impl.ViolationService.GetOwnerInfo(String carNumber, String carPassportNumber) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\ViolationService.cs:line 31
+   at DT.PCP.BussinesServices.Impl.UserService.GetUserFromService(String carNumber, String carPassportNumber, Int32 userId) in c:\Users\Max\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\UserService.cs:line 103
+02/15/2013 15:08:25: mscorlib
+02/18/2013 10:19:10: A967DTP
+02/18/2013 10:19:10: AN00153053
+02/18/2013 10:19:25: A967DTP
+02/18/2013 10:19:25: AN00153053
+02/18/2013 12:13:30: GetViolations: 
+02/21/2013 14:44:14: A967DTP
+02/21/2013 14:44:14: AN00153053
+02/21/2013 14:44:25: A967DTP
+02/21/2013 14:44:25: AN00153053
+03/01/2013 13:34:45: GetViolations: 
+03/01/2013 13:42:29: GetViolations: 
+03/01/2013 13:44:08: GetViolations: 
+03/01/2013 13:46:29: GetViolations: 
+03/01/2013 13:49:12: GetViolations: 
+03/01/2013 13:49:33: GetViolations: 
+03/01/2013 13:49:36: GetViolations: 
+03/01/2013 13:51:03: GetViolations: 
+03/01/2013 13:52:04: GetViolations: 
+03/01/2013 13:54:52: GetViolations: 
+03/01/2013 13:55:45: GetViolations: 
+03/01/2013 13:56:56: GetViolations: 
+03/01/2013 14:03:28: GetViolations: 
+03/01/2013 14:04:54: GetViolations: 
+03/01/2013 16:09:09: GetViolations: 
+03/01/2013 16:09:15: GetViolations: 
+03/04/2013 13:04:54: GetViolations: 
+03/05/2013 10:38:01: GetViolations: 
+03/05/2013 10:38:19: GetViolations: 
+03/05/2013 10:38:24: GetViolations: 
+03/05/2013 10:38:31: GetViolations: 
+03/05/2013 10:38:56: GetViolations: 
+03/05/2013 17:06:26: GetViolations: 
+03/05/2013 17:53:01: is confirmed in bdd:True
+03/05/2013 17:53:31: is confirmed in bdd:True
+03/05/2013 17:56:59: 
+03/05/2013 17:56:59: «начение не может быть неопределенным.
+»м€ параметра: s
+03/05/2013 17:56:59:    в System.IO.StringReader..ctor(String s)
+   в System.Xml.Linq.XDocument.Parse(String text, LoadOptions options)
+   в System.Xml.Linq.XDocument.Parse(String text)
+   в DT.PCP.BussinesServices.Impl.EpayService.ParseResponse(String response) в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\EpayService.cs:строка 87
+   в DT.PCP.BussinesServices.Impl.EpayService.FixPayment(String response) в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\EpayService.cs:строка 39
+   в DT.PCP.Web.Portal.Controllers.PayController.EpayResponse() в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.Web.Portal\Controllers\PayController.cs:строка 64
+03/05/2013 17:57:24: 
+03/05/2013 17:57:24: «начение не может быть неопределенным.
+»м€ параметра: s
+03/05/2013 17:57:24:    в System.IO.StringReader..ctor(String s)
+   в System.Xml.Linq.XDocument.Parse(String text, LoadOptions options)
+   в System.Xml.Linq.XDocument.Parse(String text)
+   в DT.PCP.BussinesServices.Impl.EpayService.ParseResponse(String response) в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\EpayService.cs:строка 87
+   в DT.PCP.BussinesServices.Impl.EpayService.FixPayment(String response) в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\EpayService.cs:строка 39
+   в DT.PCP.Web.Portal.Controllers.PayController.EpayResponse() в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.Web.Portal\Controllers\PayController.cs:строка 64
+03/05/2013 17:58:17: 
+03/05/2013 17:58:21: «начение не может быть неопределенным.
+»м€ параметра: s
+03/05/2013 17:58:35:    в System.IO.StringReader..ctor(String s)
+   в System.Xml.Linq.XDocument.Parse(String text, LoadOptions options)
+   в System.Xml.Linq.XDocument.Parse(String text)
+   в DT.PCP.BussinesServices.Impl.EpayService.ParseResponse(String response) в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\EpayService.cs:строка 87
+   в DT.PCP.BussinesServices.Impl.EpayService.FixPayment(String response) в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\EpayService.cs:строка 39
+   в DT.PCP.Web.Portal.Controllers.PayController.EpayResponse() в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.Web.Portal\Controllers\PayController.cs:строка 64
+03/05/2013 17:58:59: 
+03/05/2013 17:58:59: «начение не может быть неопределенным.
+»м€ параметра: s
+03/05/2013 17:58:59:    в System.IO.StringReader..ctor(String s)
+   в System.Xml.Linq.XDocument.Parse(String text, LoadOptions options)
+   в System.Xml.Linq.XDocument.Parse(String text)
+   в DT.PCP.BussinesServices.Impl.EpayService.ParseResponse(String response) в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\EpayService.cs:строка 87
+   в DT.PCP.BussinesServices.Impl.EpayService.FixPayment(String response) в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.BussinesServices.Impl\EpayService.cs:строка 39
+   в DT.PCP.Web.Portal.Controllers.PayController.EpayResponse() в c:\Users\sharo_000\Documents\Visual Studio 2012\Projects\DT.PCP\Sources\DT.PCP\DT.PCP.Web.Portal\Controllers\PayController.cs:строка 64
+03/11/2013 09:59:07: GetViolations: 
+03/11/2013 16:20:02: GetViolations: 
+03/11/2013 16:20:07: GetViolations: 
+03/13/2013 10:16:31: GetViolations: 
+03/13/2013 10:18:34: GetViolations: 
+03/13/2013 10:18:45: GetViolations: 
+03/13/2013 10:21:05: GetViolations: 
+03/13/2013 10:21:40: GetViolations: 
+03/13/2013 17:38:41: A967DTP
+03/13/2013 17:38:42: AN00153053
+03/14/2013 17:40:24: GetViolations: 
+03/14/2013 17:59:54: GetViolations: 
+03/14/2013 18:00:13: GetViolations: 
+03/15/2013 14:37:54: A967DTP
+03/15/2013 14:37:54: AN00153053
+03/15/2013 15:43:56: A967DTP
+03/15/2013 15:43:56: AN00153053
+03/15/2013 15:44:25: A967DTP
+03/15/2013 15:44:25: AN00153053
+03/15/2013 15:45:23: A967DTP
+03/15/2013 15:45:23: AN00153053
+03/15/2013 15:46:30: A967DTP
+03/15/2013 15:46:30: AN00153053
+03/15/2013 15:47:22: A967DTP
+03/15/2013 15:47:22: AN00153053
+03/15/2013 15:50:37: A967DTP
+03/15/2013 15:50:37: AN00153053
+03/15/2013 15:50:55: A967DTP
+03/15/2013 15:50:55: AN00153053
+03/15/2013 15:52:47: A967DTP
+03/15/2013 15:52:48: AN00153053
+03/15/2013 16:03:17: A967DTP
+03/15/2013 16:03:17: AN00153053
+03/15/2013 16:13:25: A967DTP
+03/15/2013 16:13:25: AN00153053
+03/15/2013 16:13:51: A967DTP
+03/15/2013 16:13:51: AN00153053
+03/15/2013 16:30:17: A967DTP
+03/15/2013 16:30:17: AN00153053
+03/15/2013 16:31:08: A967DTP
+03/15/2013 16:31:08: AN00153053
+03/15/2013 16:34:43: A967DTP
+03/15/2013 16:34:43: AN00153053
+03/16/2013 15:47:20: A002SP
+03/16/2013 15:47:21: AF00175416
+03/16/2013 15:47:34: A002SP
+03/16/2013 15:47:34: AF00175416
+03/16/2013 15:48:15: A002SP
+03/16/2013 15:48:15: AF00175416
+03/16/2013 15:54:35: A002SP
+03/16/2013 15:54:35: AF00175416
+03/18/2013 14:54:41: A967DTP
+03/18/2013 14:54:41: AN00153053
+04/02/2013 10:28:53: GetViolations: 
+04/02/2013 10:31:28: GetViolations: 
+04/02/2013 10:32:40: GetViolations: 
+04/02/2013 10:36:25: GetViolations: 
+04/02/2013 10:42:55: GetViolations: 
+04/03/2013 16:26:31: order = null
+04/03/2013 16:26:50: order = null
+04/03/2013 16:27:47: order = null
+04/15/2013 14:46:25: GetViolations: 
+04/15/2013 14:52:10: GetViolations: 
+04/15/2013 15:20:46: GetViolations: 
+04/15/2013 15:37:00: GetViolations: 
+04/15/2013 15:48:58: GetViolations: 
+04/15/2013 16:21:52: GetViolations: 
+04/15/2013 16:25:28: GetViolations: 
+04/15/2013 16:27:25: GetViolations: 
+07/29/2013 09:34:09: CreateUser: 
+07/29/2013 09:35:34: CreateUser: 
+07/29/2013 09:51:40: CreateUser: 
+07/29/2013 09:53:08: CreateUser: 
+07/29/2013 09:53:46: CreateUser: 
+07/29/2013 09:55:59: CreateUser: 
+07/29/2013 10:37:39: CreateUser: 
+07/29/2013 10:38:08: CreateUser: 
+07/29/2013 10:39:20: CreateUser: 
+07/29/2013 11:16:56: CreateUser: 
+07/29/2013 11:20:05: CreateUser: 
+07/29/2013 11:21:23: CreateUser: 
+07/29/2013 11:25:23: CreateUser: 
+07/29/2013 11:25:48: CreateUser: 
+07/29/2013 11:26:04: CreateUser: 
+07/29/2013 11:28:11: CreateUser: 
+07/29/2013 11:28:53: CreateUser: 
+07/29/2013 11:29:23: CreateUser: 
+07/29/2013 11:45:38: CreateUser: 
+07/29/2013 11:45:47: CreateUser: 
+07/29/2013 13:29:49: CreateUser: 
+07/29/2013 13:29:58: CreateUser: 
+07/29/2013 13:31:28: CreateUser: 
+03/18/2014 09:49:02: CreateUser: 
+03/18/2014 09:49:09: CreateUser: 
+03/18/2014 09:53:27: CreateUser: 
+03/18/2014 09:53:48: CreateUser: 
+03/18/2014 09:56:48: CreateUser: 
+03/18/2014 10:34:25: CreateUser: 
+03/18/2014 10:36:28: CreateUser: 
+03/20/2014 11:14:51: CreateUser: 
+03/20/2014 11:18:52: CreateUser: 
+03/20/2014 11:24:16: CreateUser: 
+03/20/2014 11:28:41: CreateUser: 
+03/20/2014 11:32:47: CreateUser: 
+03/20/2014 11:33:45: CreateUser: 
+03/20/2014 11:34:02: CreateUser: 
+03/20/2014 11:34:13: CreateUser: 
+03/20/2014 15:27:02: CreateUser: 
+05/27/2015 11:15:20: GetViolations: 
+05/27/2015 11:16:04: GetViolations: 
+05/27/2015 11:16:05: GetViolations: 
+05/27/2015 11:19:39: GetViolations: 
+05/27/2015 11:20:01: GetViolations: 
+05/27/2015 11:20:17: GetViolations: 
+05/27/2015 11:20:46: GetViolations: 
+05/27/2015 11:26:15: GetViolations: 
+05/27/2015 11:30:21: GetViolations: 
+05/27/2015 12:02:21: CreateUser: 
+05/27/2015 12:02:45: CreateUser: 
+05/27/2015 12:03:50: CreateUser: 

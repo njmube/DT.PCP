@@ -1,0 +1,1647 @@
+/* TrackBar */
+.dxeTrackBar_Pcp
+{
+	user-select: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	visibility: hidden;
+}
+
+.dxeDisabled_Pcp .dxeTBHSys a,
+.dxeDisabled_Pcp .dxeTBVSys a
+{
+    cursor: default;
+}
+
+.dxeTBBarHighlight_Pcp
+{
+	font-size: 0;
+}
+
+.dxeTBScale_Pcp,
+.dxeTBTrack_Pcp,
+.dxeTBBarHighlight_Pcp
+{
+	cursor: pointer;
+}
+
+.dxeTBScale_Pcp
+{
+    font: 10px Verdana;
+	z-index: 1;
+}
+.dxeTBSecondaryDH_Pcp,
+.dxeTBMainDH_Pcp
+{
+	z-index: 4;
+}
+
+.dxeTBHSys
+{
+	width: 170px;
+	height: 47px;
+}
+.dxeTBVSys
+{
+	height: 170px;
+	width: 47px;
+}
+.dxeTrackBar_Pcp.dxeTBBScaleSys.dxeTBVSys
+{
+	width: 70px;
+}
+.dxeTrackBar_Pcp.dxeTBBScaleSys.dxeTBHSys
+{	
+	height: 70px;
+}
+
+.dxeTBTrack_Pcp
+{
+	z-index: 2;
+	position: absolute;
+}
+
+.dxeTBHSys .dxeTBTrack_Pcp
+{
+	background-image:  url('edtTrackBarTrackH.gif');
+}
+.dxeTBVSys .dxeTBTrack_Pcp
+{
+	background-image:  url('edtTrackBarTrackV.gif');
+}
+
+.dxeTBHSys .dxeTBTrack_Pcp, 
+.dxeTBHSys .dxeTBBarHighlight_Pcp
+{
+	height: 9px;
+}
+.dxeTBVSys .dxeTBTrack_Pcp, 
+.dxeTBVSys .dxeTBBarHighlight_Pcp
+{
+	width: 9px;
+}
+
+.dxeTBHSys .dxeTBMainDH_Pcp,
+.dxeTBHSys .dxeTBSecondaryDH_Pcp
+{	
+	top: -5px;
+	width:13px;
+	height:19px;
+}
+.dxeTBVSys .dxeTBMainDH_Pcp,
+.dxeTBVSys .dxeTBSecondaryDH_Pcp
+{
+	left: -5px;
+	width:19px;
+	height:13px;
+}
+
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBTrack_Pcp,
+.dxeTBVSys .dxeTBTrack_Pcp
+{
+	left: 6px;
+}
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBTrack_Pcp
+{
+	right: 6px;
+	left: auto;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBTrack_Pcp
+{
+	bottom: 6px;
+	top: auto;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBTrack_Pcp,
+.dxeTBHSys .dxeTBTrack_Pcp
+{
+	top: 6px;
+}
+
+.dxeTBBarHighlight_Pcp
+{
+	left: 0px;
+	top: 0px;
+	position:absolute;
+	z-index: 3;
+}
+
+.dxeTBHSys .dxeTBBarHighlight_Pcp
+{
+	background-image:  url('edtTrackBarBarHighlightH.gif');
+}
+.dxeTBVSys .dxeTBBarHighlight_Pcp
+{
+	background-image:  url('edtTrackBarBarHighlightV.gif');
+}
+
+.dxeTBRBLabel_Pcp,
+.dxeTBLTLabel_Pcp
+{
+	text-align: center;
+	cursor: default;
+}
+.dxeTBSmallTickSys .dxeTBRBLabel_Pcp,
+.dxeTBSmallTickSys .dxeTBLTLabel_Pcp,
+.dxeTBLargeTickSys .dxeTBRBLabel_Pcp,
+.dxeTBLargeTickSys .dxeTBLTLabel_Pcp
+{	
+	position: absolute;
+}
+
+.dxeTBHSys .dxeTBRBLabel_Pcp,
+.dxeTBHSys .dxeTBLTLabel_Pcp
+{
+	width: 100%;
+}
+
+.dxeTBIncBtn_Pcp,
+.dxeTBDecBtn_Pcp
+{
+	padding: 2px;
+	width: 14px;
+	height: 14px;
+}
+
+.dxeTBVSys .dxeTBRBLabel_Pcp,
+.dxeTBVSys .dxeTBLTLabel_Pcp
+{
+	padding-top: 2px;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBRBLabel_Pcp
+{
+	margin-left: -4px;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBRBLabel_Pcp,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBLTLabel_Pcp
+{
+	right: 0px;
+}
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBLTLabel_Pcp,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBRBLabel_Pcp
+{
+	left: 0px;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBRBLabel_Pcp,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBLTLabel_Pcp
+{
+	bottom: 0px;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBLTLabel_Pcp,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBRBLabel_Pcp
+{
+	top: 0px;
+}
+
+.dxeTBHSys .dxeTBItem_Pcp .dxeTBRBLabel_Pcp,
+.dxeTBHSys .dxeTBItem_Pcp .dxeTBLTLabel_Pcp
+{
+	display: inline-block;
+	margin-left: 0px!important;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBItem_Pcp .dxeTBRBLabel_Pcp
+{
+	padding-top: 12px;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBItem_Pcp .dxeTBLTLabel_Pcp
+{
+	margin-top: 8px;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBItem_Pcp .dxeTBRBLabel_Pcp 
+{
+	margin-left: 5px;
+}
+
+.dxeTBSelectedItem_Pcp .dxeTBRBLabel_Pcp,
+.dxeTBSelectedItem_Pcp .dxeTBLTLabel_Pcp,
+.dxeTBSelectedTick_Pcp .dxeTBRBLabel_Pcp,
+.dxeTBSelectedTick_Pcp .dxeTBLTLabel_Pcp
+{
+	color: #898D98;
+}
+
+.dxeDisabled_Pcp .dxeTBSelectedItem_Pcp .dxeTBRBLabel_Pcp,
+.dxeDisabled_Pcp .dxeTBSelectedItem_Pcp .dxeTBLTLabel_Pcp,
+.dxeDisabled_Pcp .dxeTBSelectedTick_Pcp .dxeTBRBLabel_Pcp,
+.dxeDisabled_Pcp .dxeTBSelectedTick_Pcp .dxeTBLTLabel_Pcp
+{
+	color: #C4C6CB;
+}
+
+.dxeTBRBLabel_Pcp,
+.dxeTBLTLabel_Pcp,
+.dxeTBItem_Pcp
+{
+	color: #C4C6CC;
+}
+
+.dxeDisabled_Pcp .dxeTBRBLabel_Pcp,
+.dxeDisabled_Pcp .dxeTBLTLabel_Pcp,
+.dxeDisabled_Pcp .dxeTBItem_Pcp
+{
+	color: #E1E2E5;
+}
+
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBItem_Pcp
+{
+	text-align: left;
+}
+
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBItem_Pcp
+{
+	text-align: right;
+}
+
+.dxeTBVSys .dxeTBBScaleSys .dxeTBItem_Pcp
+{
+	text-align: center;
+}
+
+.dxeTBHSys .dxeTBItem_Pcp
+{
+	background-image:  url('edtTrackBarLargeTickH.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBItem_Pcp
+{
+	background-image:  url('edtTrackBarDoubleSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBItem_Pcp 
+{
+	background-image:  url('edtTrackBarLargeTickV.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBItem_Pcp
+{
+	background-image:  url('edtTrackBarDoubleSmallTickV.gif');
+}
+
+.dxeTBHSys .dxeTBLargeTick_Pcp
+{
+	background-image:  url('edtTrackBarLargeTickH.gif');
+}
+.dxeTBVSys .dxeTBLargeTick_Pcp
+{
+	background-image: url('edtTrackBarLargeTickV.gif');
+}
+.dxeTBHSys .dxeTBSmallTick_Pcp
+{
+	background-image: url('edtTrackBarSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBSmallTick_Pcp
+{
+	background-image: url('edtTrackBarSmallTickV.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBLargeTick_Pcp
+{
+	background-image: url('edtTrackBarDoubleLargeTickH.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBLargeTick_Pcp
+{
+	background-image: url('edtTrackBarDoubleLargeTickV.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBSmallTick_Pcp
+{
+	background-image: url('edtTrackBarDoubleSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBSmallTick_Pcp
+{
+	background-image: url('edtTrackBarDoubleSmallTickV.gif');
+}
+
+.dxeTBVSys .dxeTBIncBtn_Pcp,
+.dxeTBVSys .dxeReversedDirectionSys .dxeTBDecBtn_Pcp
+{
+	bottom: 0px;
+	top: auto;
+}
+.dxeTBVSys .dxeTBDecBtn_Pcp,
+.dxeTBVSys .dxeReversedDirectionSys .dxeTBIncBtn_Pcp
+{
+	top: 0px;
+	bottom: auto;
+}
+.dxeTBHSys .dxeTBDecBtn_Pcp, 
+.dxeTBHSys .dxeReversedDirectionSys .dxeTBIncBtn_Pcp
+{
+	left: 0px;
+	right: auto;
+}
+.dxeTBHSys .dxeTBIncBtn_Pcp,
+.dxeTBHSys .dxeReversedDirectionSys .dxeTBDecBtn_Pcp
+{
+	right: 0px;
+	left: auto;
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBDecBtn_Pcp,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBIncBtn_Pcp
+{
+	margin-left: -9px;
+	left: 50%;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBDecBtn_Pcp,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBIncBtn_Pcp
+{
+	margin-top: -9px;
+	top: 50%;
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBTrack_Pcp
+{ 
+	margin-left: -4px;
+	left: 50%;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBTrack_Pcp
+{ 
+	margin-top: -4px;
+	top: 50%;
+}
+
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBDecBtn_Pcp,
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBIncBtn_Pcp
+{
+	right: 2px;
+	left: auto;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBDecBtn_Pcp,
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBIncBtn_Pcp
+{
+	bottom: 2px;
+	top: auto;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBDecBtn_Pcp,
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBIncBtn_Pcp,
+.dxeTBVSys .dxeTBDecBtn_Pcp,
+.dxeTBVSys .dxeTBIncBtn_Pcp
+{
+	left: 2px;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBDecBtn_Pcp,
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBIncBtn_Pcp,
+.dxeTBHSys .dxeTBDecBtn_Pcp,
+.dxeTBHSys .dxeTBIncBtn_Pcp
+{
+	top: 2px;
+}
+
+.dxeTBValueToolTip_Pcp
+{
+	padding: 3px 8px 4px 8px;
+    display: inline;
+    position:absolute;
+    border-radius: 3px;
+    z-index: 41998;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #A8A8A8;
+    font: 11px Verdana;
+    background: #FDFEFE;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FDFEFE', endColorstr='#EEEFF2');
+	background: -webkit-gradient(linear, left top, left bottom, from(#FDFEFE), to(#EEEFF2));
+	background: -moz-linear-gradient(top,  #FDFEFE,  #EEEFF2);
+}
+
+/* InternalCheckBox */
+.dxeIRBFocused_Pcp
+{
+	border: 1px dotted #a390ec;
+	margin: 0px!important;
+}
+.dxeIRadioButton_Pcp
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 1px;
+}
+.dxeLoadingDiv_Pcp
+{
+	background: White none;
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+	cursor: wait;
+}
+.dxeLoadingDivWithContent_Pcp
+{
+	background: White none;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+
+.dxeLoadingPanel_Pcp
+{
+	font: 11px Verdana;
+	color: #201f35;
+}
+.dxeLoadingPanelWithContent_Pcp
+{
+	font: 11px Verdana;
+	color: #201f35;
+	background: White none;
+	border: 1px solid #9da0aa;
+}
+
+.dxeLoadingPanel_Pcp td.dx,
+.dxeLoadingPanelWithContent_Pcp td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+
+.dxeReadOnly_Pcp
+{
+}
+.dxeBase_Pcp
+{
+	font: 11px Verdana;
+}
+td.dxic
+{
+	font-size: 0;
+}
+/* -- ErrorFrame -- */
+.dxeErrorCell_Pcp,
+.dxeErrorCell_Pcp td
+{
+	font: 11px Verdana;
+	color: Red;
+}
+.dxeErrorCell_Pcp
+{
+	padding-left: 4px;
+	padding-right: 5px;
+}
+.dxeErrorFrameWithoutError_Pcp
+{
+	border: 1px solid Red;
+}
+.dxeErrorFrameWithoutError_Pcp .dxeControlsCell_Pcp
+{
+	padding: 2px;
+}
+
+.dxeEditArea_Pcp
+{
+	font: 11px Verdana;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+}
+.dxeMemoEditArea_Pcp,
+input.dxeEditArea_Pcp
+{
+	outline: none;
+}
+
+/* -- Buttons -- */
+.dxeButtonEditButton_Pcp,
+.dxeCalendarButton_Pcp,
+.dxeButtonEditButton_Pcp td.dx,
+.dxeCalendarButton_Pcp td.dx,
+.dxeSpinIncButton_Pcp,
+.dxeSpinDecButton_Pcp,
+.dxeSpinLargeIncButton_Pcp,
+.dxeSpinLargeDecButton_Pcp,
+.dxeSpinIncButton_Pcp td.dx,
+.dxeSpinDecButton_Pcp td.dx,
+.dxeSpinLargeIncButton_Pcp td.dx,
+.dxeSpinLargeDecButton_Pcp td.dx
+{
+	font: normal 11px Verdana;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.dxeButtonEditButton_Pcp,
+.dxeCalendarButton_Pcp,
+.dxeSpinIncButton_Pcp,
+.dxeSpinDecButton_Pcp,
+.dxeSpinLargeIncButton_Pcp,
+.dxeSpinLargeDecButton_Pcp
+{
+	vertical-align: middle;
+	cursor: pointer;
+}
+.dxeCalendarButton_Pcp
+{
+	border-style: solid;
+	border-color: #a9acb5;
+}
+.dxeButtonEditButton_Pcp,
+.dxeButtonEdit_Pcp .dxeSBC
+{
+	border-style: solid;
+	border-color: Transparent;
+	-border-color: White;
+}
+.dxeButtonEditButton_Pcp.dxeButtonEditButtonHover_Pcp
+{
+	border-color: #c0c9e3;
+}
+.dxeButtonEditButton_Pcp.dxeButtonEditButtonPressed_Pcp
+{
+	border-color: #c2c4cb;
+}
+.dxeButtonEditButton_Pcp.dxeDisabled_Pcp
+{
+	border-color: Transparent;
+	-border-color: White;
+}
+
+.dxeCalendarButton_Pcp
+{
+	border-width: 1px;
+}
+.dxeButtonEditButton_Pcp
+{
+	border-top-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-left-width: 1px;
+}
+.dxeButtonEdit_Pcp .dxeButtonLeft
+{
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-bottom-width: 0;
+	border-left-width: 0;
+}
+.dxeButtonEdit_Pcp .dxeSBC
+{
+	border-width: 0;
+}
+.dxeSpinIncButton_Pcp,
+.dxeSpinDecButton_Pcp,
+.dxeSpinLargeIncButton_Pcp,
+.dxeSpinLargeDecButton_Pcp
+{
+	border-width: 0;
+}
+
+.dxeButtonEditButton_Pcp,
+.dxeSpinLargeIncButton_Pcp,
+.dxeSpinLargeDecButton_Pcp,
+.dxeSpinIncButton_Pcp,
+.dxeSpinDecButton_Pcp
+{
+	background: White none;
+}
+
+.dxeButtonEditButton_Pcp table.dxbebt
+{
+	padding: 3px 2px 3px 3px;
+}
+.dxeSpinIncButton_Pcp table.dxbebt,
+.dxeSpinDecButton_Pcp table.dxbebt,
+.dxeSpinLargeIncButton_Pcp table.dxbebt,
+.dxeSpinLargeDecButton_Pcp table.dxbebt
+{
+	padding: 0;
+}
+
+.dxeSpinIncButton_Pcp
+{
+	padding: 1px 0 2px;
+}
+.dxeSpinDecButton_Pcp
+{
+	padding: 3px 0 2px;
+}
+.dxeSpinLargeIncButton_Pcp,
+.dxeSpinLargeDecButton_Pcp
+{
+	padding: 6px 0;
+}
+
+.dxeButtonEditButton_Pcp table.dxbebt,
+.dxeSpinLargeIncButton_Pcp table.dxbebt,
+.dxeSpinLargeDecButton_Pcp table.dxbebt
+{
+	width: 9px;
+}
+.dxeSpinIncButton_Pcp table.dxbebt,
+.dxeSpinDecButton_Pcp table.dxbebt
+{
+	width: 15px;
+}
+.dxeCalendarButton_Pcp
+{
+	font-size: 11px;
+	background: #ebedf2 url('edtBtnBack.png') repeat-x left top;
+	padding: 3px 11px 4px;
+	width: 32px;
+}
+.dxeCalendarButton_Pcp td.dx
+{
+	font-size: 11px;
+	text-align: center;
+	white-space: nowrap;
+}
+.dxeCalendarButton_Pcp table.dxbebt
+{
+	width: 100%;
+}
+
+/* -- Pressed -- */
+.dxeCalendarButtonPressed_Pcp
+{
+	color: #3c3c3c;
+	border-color: #9da0aa;
+	background: #dbdde2 url('edtBtnPBack.png') repeat-x left top;
+}
+.dxeButtonEditButtonPressed_Pcp,
+.dxeSpinIncButtonPressed_Pcp,
+.dxeSpinDecButtonPressed_Pcp,
+.dxeSpinLargeIncButtonPressed_Pcp, 
+.dxeSpinLargeDecButtonPressed_Pcp
+{
+	background: #e3e5e8 url('edtDropDownBtnPBack.png') repeat-x left top;
+}
+
+/* -- Hover -- */
+.dxeCalendarButtonHover_Pcp
+{
+	border-color: #a9acb5;
+}
+.dxeCalendarButtonHover_Pcp
+{
+	background: #dde6fe url('edtBtnHBack.png') repeat-x left top;
+}
+.dxeButtonEditButtonHover_Pcp,
+.dxeSpinIncButtonHover_Pcp,
+.dxeSpinDecButtonHover_Pcp,
+.dxeSpinLargeIncButtonHover_Pcp,
+.dxeSpinLargeDecButtonHover_Pcp
+{
+	background: #e6edfe url('edtDropDownBtnHBack.png') repeat-x left top;
+}
+
+.dxeButtonEdit_Pcp
+{
+	background-color: white;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+	width: 170px;
+}
+.dxeButtonEdit_Pcp .dxeEditArea_Pcp
+{
+	background-color: white;
+}
+.dxeButtonEdit_Pcp .dxeEditArea_Pcp,
+.dxeButtonEdit_Pcp td.dxic
+{
+	width: 100%;
+}
+.dxeButtonEdit_Pcp td.dxic
+{
+    padding: 2px 2px 1px 1px;
+}
+.dxeButtonEdit_Pcp .dxeIIC,
+.dxeButtonEdit_Pcp .dxeIICR
+{
+	padding: 1px;
+}
+.dxeButtonEdit_Pcp .dxeIIC img
+{
+	padding-left: 3px;
+}
+.dxeButtonEdit_Pcp .dxeIICR img
+{
+	padding-right: 3px;
+}
+
+.dxeTextBox_Pcp,
+.dxeMemo_Pcp
+{
+	background-color: white;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+}
+.dxeTextBox_Pcp td.dxic
+{
+	padding: 2px 3px 1px 2px;
+	width: 100%;
+}
+.dxeTextBox_Pcp .dxeEditArea_Pcp
+{
+	background-color: white;
+}
+.dxeRadioButtonList_Pcp,
+.dxeCheckBoxList_Pcp
+{
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+}
+
+.dxeCheckBoxList_Pcp .dxe > table,
+.dxeRadioButtonList_Pcp .dxe > table 
+{
+    width: 100%;
+}
+
+.dxeRadioButtonList_Pcp,
+.dxeRadioButtonList_Pcp table,
+.dxeCheckBoxList_Pcp,
+.dxeCheckBoxList_Pcp table
+{
+	font: 11px Verdana;
+}
+.dxeRadioButtonList_Pcp td.dxe,
+.dxeCheckBoxList_Pcp td.dxe
+{
+	padding: 7px 5px 6px 11px;
+}
+.dxeRadioButtonList_Pcp label,
+.dxeCheckBoxList_Pcp label
+{
+	margin-right: 6px;
+}
+.dxeRadioButtonList_Pcp img,
+.dxeCheckBoxList_Pcp img
+{
+	margin-bottom: -4px;
+    padding-right: 5px;
+}
+
+/* Disabled */
+.dxeDisabled_Pcp .dxeButtonEditButton_Pcp,
+.dxeDisabled_Pcp .dxeSpinIncButton_Pcp,
+.dxeDisabled_Pcp .dxeSpinDecButton_Pcp,
+.dxeDisabled_Pcp .dxeSpinLargeIncButton_Pcp,
+.dxeDisabled_Pcp .dxeSpinLargeDecButton_Pcp
+{
+	background: White none;
+}
+
+/* -- Memo -- */
+.dxeMemo_Pcp
+{
+}
+.dxeMemoEditArea_Pcp
+{
+	background-color: white;
+	font: 11px Verdana;
+}
+.dxeMemo_Pcp td
+{
+	padding: 0 0 0 1px;
+	width: 100%;
+}
+
+/* -- Hyperlink -- */
+.dxeHyperlink_Pcp
+{
+	font: normal 11px Verdana;
+	color: #1b3f91;
+	text-decoration: none;
+}
+a.dxeHyperlink_Pcp:hover
+{
+	text-decoration: underline;
+}
+a.dxeHyperlink_Pcp:visited
+{
+	color: #8684ed;
+}
+
+/* -- ListBox -- */
+.dxeListBox_Pcp
+{
+	font: 11px Verdana;
+	background-color: white;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+	width: 70px;
+	height: 109px;
+}
+.dxeListBox_Pcp div.dxlbd
+{
+	height: 108px;
+}
+.dxeListBoxItemRow_Pcp
+{
+	cursor: default;
+}
+.dxeListBoxItem_Pcp
+{
+	font: normal 11px Verdana;
+	color: #201f35;
+	padding: 2px 5px;
+	white-space: nowrap;
+	text-align: left;
+	border-width: 0;	
+}
+.dxeListBoxItem_Pcp em
+{
+	background: #e2eafd none repeat 0 0;
+	color: #201f35;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.dxeListBox_Pcp td.dxeI,
+.dxeListBox_Pcp td.dxeIM,
+.dxeListBox_Pcp .dxeHIC, 
+.dxeListBox_Pcp td.dxeFTM,
+.dxeListBox_Pcp td.dxeTM,
+.dxeListBox_Pcp td.dxeC,
+.dxeListBox_Pcp td.dxeCM,
+.dxeListBox_Pcp td.dxeHCC,
+.dxeListBox_Pcp td.dxeMI,
+.dxeListBox_Pcp td.dxeMIM
+{
+	border-right-width: 0!important;
+}
+
+.dxeListBox_Pcp td.dxeIR,
+.dxeListBox_Pcp td.dxeIMR,
+.dxeListBox_Pcp .dxeHICR, 
+.dxeListBox_Pcp td.dxeFTMR,
+.dxeListBox_Pcp td.dxeTMR,
+.dxeListBox_Pcp td.dxeCR,
+.dxeListBox_Pcp td.dxeCMR,
+.dxeListBox_Pcp td.dxeHCCR,
+.dxeListBox_Pcp td.dxeMIR,
+.dxeListBox_Pcp td.dxeMIMR
+{
+	border-left-width: 0!important;
+}
+
+.dxeListBox_Pcp td.dxeCM,
+.dxeListBox_Pcp td.dxeHCC,
+.dxeListBox_Pcp td.dxeCMR,
+.dxeListBox_Pcp td.dxeHCCR
+{
+	width: 31px;
+	*width: 21px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.dxeListBox_Pcp td.dxeIM,
+.dxeListBox_Pcp td.dxeIMR
+{
+	width: 0;
+}
+.dxeListBox_Pcp td.dxeC
+{
+	padding-right: 3px!important;
+}
+.dxeListBox_Pcp td.dxeCR
+{
+	padding-left: 3px!important;
+}
+.dxeListBox_Pcp td.dxeC > span,
+.dxeListBox_Pcp td.dxeCM > span
+{
+    margin: 2px 2px 2px 3px;
+}
+.dxeListBox_Pcp td.dxeCR > span,
+.dxeListBox_Pcp td.dxeCMR > span
+{
+    margin: 2px 3px 2px 2px;
+}
+.dxeListBox_Pcp td.dxeT
+{
+	width: 100%;
+	padding-left: 0!important;
+}
+
+.dxeListBox_Pcp td.dxeTR
+{
+	width: 100%;
+	padding-right: 0!important;
+}
+
+
+.dxeListBox_Pcp td.dxeT,
+.dxeListBox_Pcp td.dxeMI
+{
+	border-left-width: 0!important;
+}
+
+.dxeListBox_Pcp td.dxeTR,
+.dxeListBox_Pcp td.dxeMIR
+{
+	border-right-width: 0!important;
+}
+
+
+.dxeListBox_Pcp td.dxeFTM,
+.dxeListBox_Pcp td.dxeTM,
+.dxeListBox_Pcp td.dxeLTM,
+.dxeListBox_Pcp .dxeHFC,
+.dxeListBox_Pcp .dxeHC,
+.dxeListBox_Pcp .dxeHLC,
+.dxeListBox_Pcp td.dxeFTMR,
+.dxeListBox_Pcp td.dxeTMR,
+.dxeListBox_Pcp td.dxeLTMR,
+.dxeListBox_Pcp .dxeHFCR,
+.dxeListBox_Pcp .dxeHCR,
+.dxeListBox_Pcp .dxeHLCR
+{
+	overflow: hidden;	
+}
+
+.dxeListBox_Pcp td.dxeFTM,
+.dxeListBox_Pcp td.dxeTM,
+.dxeListBox_Pcp .dxeHFC,
+.dxeListBox_Pcp .dxeHC
+{
+	padding-right: 6px!important;
+}
+
+.dxeListBox_Pcp td.dxeFTMR,
+.dxeListBox_Pcp td.dxeTMR,
+.dxeListBox_Pcp .dxeHFCR,
+.dxeListBox_Pcp .dxeHCR
+{
+	padding-left: 6px!important;
+}
+
+
+.dxeListBox_Pcp td.dxeLTM,
+.dxeListBox_Pcp td.dxeTM,
+.dxeListBox_Pcp .dxeHC,
+.dxeListBox_Pcp .dxeHLC
+{
+	padding-left: 6px!important;
+}
+
+.dxeListBox_Pcp td.dxeLTMR,
+.dxeListBox_Pcp td.dxeTMR,
+.dxeListBox_Pcp .dxeHCR,
+.dxeListBox_Pcp .dxeHLCR
+{
+	padding-right: 6px!important;
+}
+
+.dxeListBox_Pcp .dxeFTM,
+.dxeListBox_Pcp .dxeTM,
+.dxeListBox_Pcp .dxeHFC,
+.dxeListBox_Pcp .dxeHC,
+.dxeListBox_Pcp .dxeLTM,
+.dxeListBox_Pcp .dxeTM,
+.dxeListBox_Pcp .dxeHC,
+.dxeListBox_Pcp .dxeHLC,
+.dxeListBox_Pcp td.dxeIM,
+.dxeListBox_Pcp td.dxeFTM,
+.dxeListBox_Pcp td.dxeTM,
+.dxeListBox_Pcp td.dxeCM,
+.dxeListBox_Pcp td.dxeMIM,
+.dxeListBox_Pcp .dxeFTMR,
+.dxeListBox_Pcp .dxeTMR,
+.dxeListBox_Pcp .dxeHFCR,
+.dxeListBox_Pcp .dxeHCR,
+.dxeListBox_Pcp .dxeLTMR,
+.dxeListBox_Pcp .dxeTMR,
+.dxeListBox_Pcp .dxeHCR,
+.dxeListBox_Pcp .dxeHLCR,
+.dxeListBox_Pcp td.dxeIMR,
+.dxeListBox_Pcp td.dxeFTMR,
+.dxeListBox_Pcp td.dxeTMR,
+.dxeListBox_Pcp td.dxeCMR,
+.dxeListBox_Pcp td.dxeMIMR
+{
+	border-top-width: 0;
+	border-bottom-width: 0;
+}
+
+/*Grid lines*/
+
+.dxeListBox_Pcp td.dxeLTM,
+.dxeListBox_Pcp td.dxeTM,
+.dxeListBox_Pcp td.dxeMIM
+{
+	border-left: 1px solid #d9dae0!important;
+}
+.dxeListBox_Pcp td.dxeLTM 
+{
+	border-right: 1px solid Transparent!important;
+}
+.dxeListBox_Pcp td.dxeLTMR,
+.dxeListBox_Pcp td.dxeTMR,
+.dxeListBox_Pcp td.dxeMIMR
+{
+	border-right: 1px solid #d9dae0!important;
+}
+
+.dxeListBox_Pcp td.dxeIM,
+.dxeListBox_Pcp td.dxeFTM,
+.dxeListBox_Pcp td.dxeTM,
+.dxeListBox_Pcp td.dxeLTM,
+.dxeListBox_Pcp td.dxeCM,
+.dxeListBox_Pcp td.dxeMIM,
+.dxeListBox_Pcp td.dxeIMR,
+.dxeListBox_Pcp td.dxeFTMR,
+.dxeListBox_Pcp td.dxeTMR,
+.dxeListBox_Pcp td.dxeLTMR,
+.dxeListBox_Pcp td.dxeCMR,
+.dxeListBox_Pcp td.dxeMIMR
+{
+	border-bottom: 1px solid #d9dae0;
+}
+
+.dxeListBoxItemSelected_Pcp     /* inherits dxeListBoxItem */
+{
+	color: #201f35;
+	background: #eff0f2 none;
+}
+.dxeListBoxItemHover_Pcp        /* inherits dxeListBoxItem */
+{
+	color: #201f35;
+	background: #e2eafd none;
+}
+.dxeListBoxItemHover_Pcp em,
+.dxeListBoxItemSelected_Pcp em
+{
+	background-image: none;
+}
+
+/*Header*/
+
+.dxeListBox_Pcp .dxeHD
+{
+	background: #f3f3f4 url('lbHeaderBack.png') repeat-x left top;
+	border-bottom: 1px solid #abacb9;
+}
+.dxeHD .dxeListBoxItem_Pcp
+{
+	color: #201f35;
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-bottom-width: 0;
+	border-left-width: 1px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.dxeListBox_Pcp .dxeHC,
+.dxeListBox_Pcp .dxeHLC,
+.dxeListBox_Pcp td.dxeHMIC
+{
+	border-left: 1px solid #cacbd3;
+}
+
+.dxeListBox_Pcp .dxeHCR,
+.dxeListBox_Pcp .dxeHLCR,
+.dxeListBox_Pcp td.dxeHMICR
+{
+	border-right: 1px solid #cacbd3;
+	text-align: right;
+}
+
+.dxeListBox_Pcp .dxeHIC,
+.dxeListBox_Pcp .dxeHFC,
+.dxeListBox_Pcp .dxeHCC
+{
+}
+
+.dxeListBox_Pcp .dxeHICR,
+.dxeListBox_Pcp .dxeHFCR,
+.dxeListBox_Pcp .dxeHCCR
+{
+}
+
+.dxeListBox_Pcp .dxeHFC,
+.dxeListBox_Pcp .dxeHC,
+.dxeListBox_Pcp .dxeHMIC
+{
+	border-right-width: 0;
+}
+
+.dxeListBox_Pcp .dxeHFCR,
+.dxeListBox_Pcp .dxeHCR,
+.dxeListBox_Pcp .dxeHMICR
+{
+	border-left-width: 0;
+	text-align: right;
+}
+
+.dxeListBox_Pcp .dxeHLC
+{
+	border-right: 1px solid #cacbd3;
+}
+
+.dxeListBox_Pcp .dxeHLCR
+{
+	border-left: 1px solid #cacbd3;
+	text-align: right;
+}
+
+/* -- Calendar -- */
+.dxeCalendar_Pcp
+{
+	font-weight: normal;
+	color: #201f35;
+	border: 1px solid #9da0aa;
+	background-color: White;
+	cursor: default;
+}
+.dxeCalendar_Pcp td.dxMonthGrid
+{
+	padding: 1px 8px;
+}
+.dxeCalendar_Pcp td.dxMonthGridWithWeekNumbers
+{
+	padding: 1px 20px 6px 8px;
+}
+.dxeCalendar_Pcp td.dxMonthGridWithWeekNumbersRtl
+{
+	padding: 1px 8px 1px 20px;
+}
+.dxeCalendarDayHeader_Pcp
+{
+	font: 11px Verdana;
+	padding: 2px 4px 6px;
+	border-bottom: 1px solid #d7d8dd;
+}
+.dxeCalendarWeekNumber_Pcp
+{
+	font: 9px Verdana;
+	text-align: right;
+	padding: 3px 8px 2px 4px;
+	color: #cccccc;
+}
+.dxeCalendarDay_Pcp
+{
+	font: 11px Verdana;
+	padding: 2px 5px 3px;
+	text-align: center;
+}
+.dxeCalendarWeekend_Pcp        /* inherits dxeCalendarDay */
+{
+	color: #c00000;
+}
+.dxeCalendarOtherMonth_Pcp     /* inherits dxeCalendarDay */
+{
+	color: #cccccc;
+}
+.dxeCalendarOutOfRange_Pcp     /* inherits dxeCalendarDay */
+{
+	color: #cccccc;
+}
+.dxeCalendarSelected_Pcp       /* inherits dxeCalendarDay */
+{
+	color: #201f35;
+	background-color: #e2eafd;
+	padding: 2px 5px 3px;
+}
+.dxeCalendarToday_Pcp         /* inherits dxeCalendarDay */
+{
+	padding: 2px 5px 3px;
+	background-color: #f3ebfe;
+	border-width: 0;
+}
+.dxeCalendarHeader_Pcp
+{
+	border-style: none;
+	padding: 4px 4px 12px;
+	font: 11px Verdana;
+}
+.dxeCalendarHeader_Pcp td.dxe
+{
+	text-align: center;
+	cursor: pointer;
+}
+.dxeCalendarFooter_Pcp
+{
+	background-color: White;
+	padding: 11px 0;
+}
+.dxeCalendarFastNav_Pcp
+{
+	color: #201f35;
+	background: White none;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #9da0aa;
+	border-bottom: 0 solid #9da0aa;
+	border-left: 1px solid #9da0aa;
+	padding: 5px 8px;
+	cursor: default;
+}
+.dxeCalendarFastNavMonthArea_Pcp
+{
+	padding: 0px 9px;
+}
+.dxeCalendarFastNavYearArea_Pcp
+{
+}
+.dxeCalendarFastNavFooter_Pcp
+{
+	color: #201f35;
+	background: White none;
+	padding: 8px 0 17px;
+	border-top: 0 solid #d7d8dd;
+	border-right: 1px solid #d7d8dd;
+	border-bottom: 1px solid #d7d8dd;
+	border-left: 1px solid #d7d8dd;
+}
+.dxeCalendarFastNavMonth_Pcp,
+.dxeCalendarFastNavYear_Pcp
+{
+	font: normal 11px Verdana;
+	color: #201f35;
+	padding: 3px 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.dxeCalendarFastNavYear_Pcp
+{
+	padding: 3px 5px;
+}
+.dxeCalendarFastNavMonth_Pcp
+{
+	padding: 6px;
+}
+
+.dxeCalendarFastNavMonthHover_Pcp,
+.dxeCalendarFastNavYearHover_Pcp
+{
+	color: #201f35;
+	background: #f3ebfe none;
+	border-width: 0;
+}
+.dxeCalendarFastNavYearHover_Pcp,
+.dxeCalendarFastNavYearSelected_Pcp
+{
+	padding: 3px 5px;
+}
+.dxeCalendarFastNavMonthHover_Pcp,
+.dxeCalendarFastNavMonthSelected_Pcp
+{
+	padding: 6px;
+}
+.dxeCalendarFastNavMonthSelected_Pcp,
+.dxeCalendarFastNavYearSelected_Pcp
+{
+	color: #201f35;
+	background-color: #e2eafd;
+}
+
+/* Disabled */
+.dxeDisabled_Pcp,
+.dxeDisabled_Pcp td.dxe
+{
+	color: #b1b1b8;
+	cursor: default;
+}
+a.dxeDisabled_Pcp:hover
+{
+	color: #b1b1b8;
+}
+.dxeButtonDisabled_Pcp,
+.dxeButtonDisabled_Pcp td.dxe
+{
+	color: #b1b1b8;
+	cursor: default;
+}
+/* -- Button -- */
+.dxbButton_Pcp
+{
+	color: #201f35;
+	font: normal 11px Verdana;
+	vertical-align: middle;
+	border: 1px solid #a9acb5;
+	background: #ebedf2 url('edtBtnBack.png') repeat-x left top;
+	padding: 1px;
+	cursor: pointer;
+}
+.dxbButtonHover_Pcp
+{
+	color: #201f35;
+	background: #dde6fe url('edtBtnHBack.png') repeat-x left top;
+	border: 1px solid #a9acb5;
+}
+.dxbButtonChecked_Pcp
+{
+	color: #3c3c3c;
+	background: #dbdde2 url('edtBtnPBack.png') repeat-x left top;
+	border: 1px solid #9da0aa;
+}
+.dxbButtonPressed_Pcp
+{
+	color: #3c3c3c;
+	background: #dbdde2 url('edtBtnPBack.png') repeat-x left top;
+	border: 1px solid #9da0aa;
+}
+.dxbButton_Pcp div.dxb
+{
+	padding: 3px 15px;
+	border-width: 0px;
+}
+.dxbButton_Pcp div.dxbf
+{
+	padding: 2px 14px;
+	border: 1px dotted black;
+}
+.dxbButton_Pcp div.dxb td.dxb
+{
+	background: transparent url('')!important;
+	border-width: 0px!important;
+	padding: 0px!important;
+}
+/* Disabled */
+.dxbDisabled_Pcp
+{
+	border-color: #e1e2e5;
+	color: #babac1;
+	background: #f8f9fa url('edtBtnDisabledBack.png') repeat-x left top;
+	cursor: default;
+}
+.dxbDisabled_Pcp td.dxb
+{
+	color: #babac1;
+}
+/* -- FilterControl -- */
+.dxfcTable_Pcp
+{
+	border-collapse: separate!important;
+}
+.dxfcTable_Pcp td.dxfc
+{
+	padding: 0px 0px 0px 3px;
+	vertical-align: middle;
+	font: 11px Verdana;
+	color: #201f35;
+}
+a.dxfcPropertyName_Pcp
+{
+	white-space: nowrap!important;
+	color: Blue!important;
+}
+a.dxfcGroupType_Pcp
+{
+	white-space: nowrap!important;
+	padding: 0px 3px!important;
+	color: Red!important;
+}
+a.dxfcOperation_Pcp
+{
+	white-space: nowrap!important;
+	color: Green!important;
+}
+a.dxfcValue_Pcp
+{
+	white-space: nowrap!important;
+	color: Gray!important;
+}
+
+.dxfcLoadingDiv_Pcp
+{
+	background: white none;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+.dxfcLoadingPanel_Pcp
+{
+	font: 11px Verdana;
+	color: #201f35;
+	background: White none;
+	border: 1px solid #9da0aa;
+}
+.dxfcLoadingPanel_Pcp td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+
+.dxeMaskHint_Pcp
+{
+	font: 11px Verdana;
+	color: Black;
+	background: #ffffe1 none;
+	padding: 2px 5px 3px;
+	border: 1px solid Black;
+}
+
+/* -- ProgressBar -- */
+.dxeProgressBar_Pcp
+{
+	background: #f3f4f5 url('edtProgressBack.png') repeat-x left top;
+	border: 1px solid #b9bac3;
+}
+.dxeProgressBar_Pcp,
+.dxeProgressBar_Pcp td.dxe
+{
+	font: 11px Verdana;
+	color: #201f35;
+}
+.dxeProgressBar_Pcp .dxePBMainCell_Pcp,
+.dxeProgressBar_Pcp td.dxe
+{
+	padding: 0;
+}
+.dxeProgressBarIndicator_Pcp
+{
+	background: #edd0f4 url('edtProgressIndicatorBack.png') repeat-x left top;
+}
+
+/* -- DropDownWindow -- */
+.dxeDropDownWindow_Pcp
+{
+	background-color: white;
+	border: 1px solid #9da0aa;
+}
+
+/*----------------- ColorTable -----------------*/
+.dxeColorIndicator_Pcp
+{
+	border: 1px solid #9da0aa;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.dxeColorTable_Pcp
+{
+	background-color: White;
+	border: 1px solid #9da0aa;
+}
+.dxeItemPicker_Pcp
+{
+	background-color: White;
+	border: 1px solid #9da0aa;
+}
+.dxeColorTable_Pcp td.dx,
+.dxeItemPicker_Pcp td.dx
+{
+	padding: 4px;
+}
+.dxeColorTableCell_Pcp,
+.dxeItemPickerCell_Pcp
+{
+	padding: 3px;
+	cursor: pointer;
+}
+.dxeColorTableCellDiv_Pcp
+{
+	border: 1px solid #808080;
+	width: 12px;
+	height: 12px;
+	font-size: 0px;
+}
+.dxeColorTableCellSelected_Pcp
+{
+	padding: 2px!important;
+	background: #e9eaee url('../Web/mItemSBack.png') repeat-x left top;
+	border: 1px solid #9da0aa;
+}
+.dxeColorTableCellHover_Pcp,
+.dxeItemPickerCellHover_Pcp
+{
+	padding: 2px!important;
+	background: #e3ebff url('../Web/mSubItemHBack.png') repeat-x left top;
+	border: 1px solid #a6a9b2;
+}
+
+/* -- Invalid Style -- */
+.dxeInvalid_Pcp
+{
+}
+.dxeInvalid_Pcp .dxeEditArea_Pcp,
+.dxeInvalid_Pcp .dxeMemoEditArea_Pcp
+{
+}
+
+/* -- Focused Style -- */
+.dxeFocused_Pcp
+{
+	border-top: 1px solid #434756;
+	border-right: 1px solid #7d808d;
+	border-bottom: 1px solid #aaacb9;
+	border-left: 1px solid #7d808d;
+}
+
+.dxeFocused_Pcp.dxeTrackBar_Pcp
+{	
+	border: 0px;
+}
+
+/* -- Null Text Style -- */
+.dxeNullText_Pcp .dxeEditArea_Pcp,
+.dxeNullText_Pcp .dxeMemoEditArea_Pcp
+{
+	color: #b1b1b8;
+}
+
+/* -- Captcha -- */
+.dxcaControl_Pcp 
+{
+}
+
+.dxcaRefreshButton_Pcp
+{
+	font: 11px Verdana;
+	color: #1b3f91;
+	text-decoration: none;
+}
+
+.dxcaDisabledRefreshButton_Pcp
+{
+	color: #b1b1b8;
+}
+
+.dxcaRefreshButtonCell_Pcp
+{
+	padding-left: 2px;
+}
+
+.dxcaRefreshButtonText_Pcp
+{
+}
+
+.dxcaDisabledRefreshButtonText_Pcp
+{
+}
+
+.dxcaTextBoxCell_Pcp
+{
+	font: 11px Verdana;
+}
+
+.dxcaTextBoxCell_Pcp,
+.dxcaTextBoxCellNoIndent_Pcp
+{
+	font: 11px Verdana;
+}
+
+.dxcaTextBoxCell_Pcp .dxeErrorCell_Pcp
+{
+}
+
+.dxcaTextBoxCellNoIndent_Pcp .dxeErrorCell_Pcp
+{
+	padding-left: 0px;
+	padding-top: 4px;
+	color: Red;
+}
+
+.dxcaTextBoxLabel_Pcp
+{
+	padding-bottom: 4px;
+	display: block;
+}
+
+.dxcaLoadingPanel_Pcp
+{
+	font: 11px Verdana;
+	color: #201f35;
+	background: White none;
+	border: 1px solid #9da0aa;
+}
+
+.dxcaLoadingPanel_Pcp td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+
+.dxeButtonEdit_Pcp
+{
+	border-collapse: separate!important;
+}
+
+.dxpcControl_Pcp .dxHFBPS,
+.dxpcLite_Pcp .dxHFBPS
+{
+    width: 6px;
+}
+
+.dxeTextBox_Pcp,
+.dxeButtonEdit_Pcp,
+.dxeIRadioButton_Pcp,
+.dxeRadioButtonList_Pcp,
+.dxeCheckBoxList_Pcp
+{
+    cursor: default;
+}
+
+
+/* Removes flicking in iOS Safari*/
+.dxeTrackBar_Pcp, 
+.dxeIRadioButton_Pcp, 
+.dxeButtonEdit_Pcp, 
+.dxeTextBox_Pcp, 
+.dxeRadioButtonList_Pcp, 
+.dxeCheckBoxList_Pcp, 
+.dxeMemo_Pcp, 
+.dxeListBox_Pcp, 
+.dxeCalendar_Pcp, 
+.dxeColorTable_Pcp
+{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}

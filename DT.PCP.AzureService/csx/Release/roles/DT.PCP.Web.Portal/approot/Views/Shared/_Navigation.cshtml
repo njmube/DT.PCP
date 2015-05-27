@@ -1,0 +1,31 @@
+﻿@using DT.PCP.Web.Core
+@using DT.PCP.Web.Resources.Views.Shared
+
+@*<a class="home-icon" href="/"><img alt="Home Icon" src="@Url.Content("~/Images/home-icon.png")"></a>*@
+<ul class="nav pull-left span6">
+    <li>
+        @Html.ActionLink(SharedViewsStrings.NavigationHome, "Index", "Home")
+    </li>
+    <li>
+        @Html.ActionLink(SharedViewsStrings.NavigationTariff, "Index", "Tariff")
+    </li>
+    <li>
+        @Html.ActionLink(SharedViewsStrings.NavigationSupport,"Index","Support")
+    </li>
+    <li>
+        @Html.ActionLink(SharedViewsStrings.NavigationContacts, "Index", "Contact")
+    </li>
+</ul>
+<ul class="nav pull-right">
+    
+    @Html.Partial("_Greeting")
+    @*<li>
+        @Html.ActionLink("eng", "ChangeCulture", "Account", new { lang = (int)DT.PCP.CommonDomain.Culture.En, returnUrl =  
+                                                                this.Request.RawUrl }, new { @class = "culture-link" })
+    </li>
+    <li>
+    @Html.ActionLink("рус", "ChangeCulture", "Account", new { lang = (int)DT.PCP.CommonDomain.Culture.Ru, returnUrl = 
+            this.Request.RawUrl }, new { @class = "culture-link" })
+        </li>
+    *@
+</ul>

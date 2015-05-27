@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+}
+@using System.Configuration
+@model DT.PCP.Domain.User
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Vaucher</title>
+</head>
+<body>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" background="http://gifky.com/image.axd?picture=RocketMail/SharedImages/Light-Background/bg.jpg" align="center" style="border-collapse: collapse; text-align: left; background-repeat: repeat; background-color: #e6e6e6;" id="pageContainer">
+        <tbody>
+            <tr>
+                <td style="padding-top: 30px; padding-bottom: 30px;">
+
+                    <table width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" style="border-collapse: collapse; text-align: left; font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 12px; line-height: 15pt; color: #777777;">
+                        <tbody>
+                            <tr>
+                                <td width="270" valign="middle" style="font-size: 19px; padding-left: 30px; font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #000000; border-top: 1px solid rgb(221, 221, 221); text-align: center; line-height: 29pt;">
+                                    <h1 style="font-weight: 300">Вас приветствует сайт оплаты штрафов</h1>
+                                </td>
+                            </tr>
+                            
+
+                            <tr>
+                                <td width="270" valign="middle" style="padding-left: 30px; color: rgb(0, 0, 0); text-align: center; line-height: 25pt; font-family: Segoe UI,Helvetica,sans-serif; font-size: 17px;">
+                                    <a href="@ConfigurationManager.AppSettings["SiteUrl"]" style="text-decoration: none; cursor: pointer; color: #518fce;">@ConfigurationManager.AppSettings["SiteName"]</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    
+                    <table width="600" cellspacing="0" cellpadding="0" align="center" style="border-collapse: collapse; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15pt; font-weight: 300; color: #777777;">
+                        <tbody>
+
+                            <tr>
+                                <td width="600" valign="middle" bgcolor="#ffffff" style="font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 16pt; color: #000000; font-weight: 300; text-align: center">
+                                    <p style="margin-top: 0; margin-bottom: 16px !important; padding: 0;">
+                                        Вы успешно отписались от email уведомлений о нарушениях.
+                                    </p>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table width="600" cellspacing="0" cellpadding="0" align="center" style="border-collapse: collapse; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15pt; font-weight: 300; color: #777777;">
+                        <tbody>
+
+                            <tr>
+                                <td width="600" valign="middle" bgcolor="#ffffff" style="font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 16pt; color: #9099A3; font-weight: 300; text-align: center">
+                                    <p style="margin-top: 0; margin-bottom: 16px !important; padding: 0;">
+                                        Данное сообщение сформированно автоматически и не требует ответа.
+
+                                    </p>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="600" cellspacing="0" cellpadding="0" align="center" style="border-collapse: collapse; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15pt; font-weight: 300; color: #777777;">
+                        <tbody>
+
+                            <tr>
+                                <td width="300" valign="middle" bgcolor="#d0d0d0" style="font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 16pt; color: #9099A3; font-weight: 300; padding: 10px;">
+                                    <img src="@ConfigurationManager.AppSettings["SiteUrl"]/images/logo-footer.png" style="height: 72px;" />
+                                </td>
+
+                                <td width="300" valign="middle" bgcolor="#d0d0d0" style="font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 16pt; color: #000000; font-weight: 300; text-align: center">
+                                    <p style="margin-top: 0; margin-bottom: 16px !important; padding-top: 10px; text-align: right; padding-right: 10px;">
+                                        Республика Казахстан, 010000.<br />
+                                        город Астана<br />
+                                        улица Иманова 19, оф. 806
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

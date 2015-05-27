@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="DT.PCP.AzureService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="DT.PCP.Web.Portal">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="pcpcloudrdp" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHpwqJLItwS4SHSSPaAN9cwwDQYJKoZIhvcNAQEBBQAEggEAGxcM122M5QU4Ktm9SJTdDSbtOk2Pi1Vim7KSfrck5MiOHckULKajPhX/hZFhH4ZV7gMWIDWXAqkd8NYj6cGTWxTzTXHU5z5f2Wik/zTCaUpE+3BQpOVGL7gvqvPs49oQeUgXw2Q58ET+/ExtibBcsY9a1rBedEAj7QxnjRMXqNnZn/Gl6AZvHBqWsSuaijbLp2gtb5D8cN5xO0vcN4MDGAWX9YuiR9XEim63m5nwMFLVrKXdoUeDVQbr8aXx2fbMh6OCDrEP8cBBsj+aKvCqOcdBk8Ln2IiRZdI04YUWBnYGJGhMwOdYKm+2aSJpvhKxOGWGVZQWM6UQCInOLnMJHzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECHVeJZuWw5BrgBBumot5rQdcOG9txiabd8LE" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-02-16T23:59:59.0000000+06:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="ViolationImagesContainer" value="violationimages" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="74E96BF6E8A8199F48590152082C3C6BF09BC05B" thumbprintAlgorithm="sha1" />
+      <Certificate name="WcfClient" thumbprint="EE95764355D8752BBCDDEB9FA2DFBE7773AFF958" thumbprintAlgorithm="sha1" />
+      <Certificate name="WcfServer" thumbprint="CEC518C373D5FC39279D28D0826C1AF82E214F88" thumbprintAlgorithm="sha1" />
+      <Certificate name="WCFCA" thumbprint="B57DAEAD6BC7CFCCA8FD16A1150D22A0EB598A37" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="DT.PCP.ViolationNotificationWorker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="pcpcloudrdp" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHpwqJLItwS4SHSSPaAN9cwwDQYJKoZIhvcNAQEBBQAEggEAGxcM122M5QU4Ktm9SJTdDSbtOk2Pi1Vim7KSfrck5MiOHckULKajPhX/hZFhH4ZV7gMWIDWXAqkd8NYj6cGTWxTzTXHU5z5f2Wik/zTCaUpE+3BQpOVGL7gvqvPs49oQeUgXw2Q58ET+/ExtibBcsY9a1rBedEAj7QxnjRMXqNnZn/Gl6AZvHBqWsSuaijbLp2gtb5D8cN5xO0vcN4MDGAWX9YuiR9XEim63m5nwMFLVrKXdoUeDVQbr8aXx2fbMh6OCDrEP8cBBsj+aKvCqOcdBk8Ln2IiRZdI04YUWBnYGJGhMwOdYKm+2aSJpvhKxOGWGVZQWM6UQCInOLnMJHzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECHVeJZuWw5BrgBBumot5rQdcOG9txiabd8LE" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-02-16T23:59:59.0000000+06:00" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="74E96BF6E8A8199F48590152082C3C6BF09BC05B" thumbprintAlgorithm="sha1" />
+      <Certificate name="WcfClient" thumbprint="EE95764355D8752BBCDDEB9FA2DFBE7773AFF958" thumbprintAlgorithm="sha1" />
+      <Certificate name="WcfServer" thumbprint="CEC518C373D5FC39279D28D0826C1AF82E214F88" thumbprintAlgorithm="sha1" />
+      <Certificate name="WCFCA" thumbprint="B57DAEAD6BC7CFCCA8FD16A1150D22A0EB598A37" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

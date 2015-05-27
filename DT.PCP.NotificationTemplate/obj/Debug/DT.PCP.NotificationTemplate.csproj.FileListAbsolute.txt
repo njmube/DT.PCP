@@ -1,0 +1,9 @@
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\bin\Debug\Templates\NotificationCheckCode.cshtml
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\bin\Debug\Templates\NotificationUnSubscribed.cshtml
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\bin\Debug\Templates\NotificationSubscribed.cshtml
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\bin\Debug\Templates\NotificatioEmail.cshtml
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\bin\Debug\DT.PCP.NotificationTemplate.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\bin\Debug\DT.PCP.NotificationTemplate.pdb
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\obj\Debug\DT.PCP.NotificationTemplate.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\obj\Debug\DT.PCP.NotificationTemplate.pdb
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.NotificationTemplate\obj\Debug\DT.PCP.NotificationTemplate.csprojResolveAssemblyReference.cache

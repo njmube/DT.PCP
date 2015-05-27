@@ -1,0 +1,65 @@
+﻿@using DT.PCP.Web.Resources.Views.Help
+@using DT.PCP.Web.Resources.Views.Shared
+<div class="span12">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>Как войти с вводом номер авто+номер техпаспорта</h1>
+    </header>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>
+<div class="span12 clear_mp" style="text-align: justify; font-size: 16px;">
+    <p style="text-align: justify; color: black;">Для того, чтобы войти для просмотра личных сведений и перечня нарушений, пожалуйста, введите в строку <strong style="color: #9099A3">"№ автомобиля"</strong> гос. номер Вашего автомобиля, заглавными буквами без пробелов и дефисов. Затем необходимо будет заполнить следующие поля.</p>
+</div>
+<div class="span12 clear_mp">
+    <div class="span1 clear_mp">
+        <strong style="color: #5ca1e2; font-size: 22px">1)</strong>
+    </div>
+    <div class="span3 clear_mp" style="margin-left: 70px !important;">
+        <img  src=@Url.Content("~/Images/login_instr_numbern.png")  />
+    </div>
+    <div class="span2 clear_mp" style="position: relative; height: 113px; width: 115px;">
+        <p style="position: absolute; bottom: 0; font-size: 16px">№ автомобиля</p>
+    </div>
+    <div class="span3 clear_mp">
+        <img src=@Url.Content("~/Images/login_instr_number.png") style="margin-top: -8px" />
+    </div>
+    <div class="span2 clear_mp" style="position: relative; height: 113px;">
+        <p style="position: absolute; bottom: 0; font-size: 16px">№ автомобиля</p>
+    </div>
+</div>
+<div class="span12 clear_mp" style="width:1170px;margin-top:20px !important; margin-bottom:20px !important; background: url(@Url.Content("~/Images/blue-line-hor.png")) repeat-x; height: 7px;  ">
+</div>
+<div class="span12 clear_mp">
+    <p style="height: 144px; font-size: 16px; color: black; text-align: justify">В строку ввода номера тех. паспорта, пожалуйста, введите Ваши данные заглавными буквами без символа № и пробелов, затем пройдите в необходимый раздел <strong style="color: #5ca1e2;">"Список нарушений"</strong> или <strong style="color: #5ca1e2;">"Личный кабинет"</strong></p>
+    <div class="span1 clear_mp">
+        <strong style="color: #5ca1e2; font-size: 22px">2)</strong>
+    </div>
+    <div class="span4 clear_mp">
+        <img  src=@Url.Content("~/Images/login_instr_passport.png")  />
+    </div>
+    <div class="span6">
+        <div class="span3" style="width: 230px">
+            <img  src=@Url.Content("~/Images/login_instr_passport_tb.png")  />
+        </div>
+
+        <div class="span3">
+            <p style="font-size: 16px">№ тех. паспорта</p>
+        </div>
+    </div>
+</div>
+<div class="span12 clear_mp" style="width:1170px;margin-top:20px !important; margin-bottom:20px !important; background: url(@Url.Content("~/Images/blue-line-hor.png")) repeat-x; height: 7px;  ">
+</div>
+<div class="span12 clear_mp" style="margin-bottom: 15px !important">
+    <div class="span1 clear_mp">
+        <strong style="color: #5ca1e2; font-size: 22px">3)</strong>
+    </div>
+    <div class="span4 clear_mp">
+        <button class="btn btn-large btn-primary span" style="cursor: default; margin-bottom: 0px; margin-left: 0px;">@HelpViewsStrings.ButtonEnter</button>
+    </div>
+</div>
+<div class="span12 clear_mp" style="width:1170px;margin-top:20px !important; margin-bottom:20px !important; background: url(@Url.Content("~/Images/blue-line-hor.png")) repeat-x; height: 7px;  ">
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>

@@ -1,0 +1,25 @@
+﻿
+@using DT.PCP.Web.Resources.Views.Help
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">@HelpViewsStrings.ModalEditInfoHeader</h3>
+</div>
+<div class="modal-body">
+    <div class="span10 clear_mp" style="text-align: justify; font-size: 16px;">
+        <p style="text-align: justify; color: black;">Если отображаемая информация не соответсвует действительности, то Вы можете ее изменить путем нажатия кнопки <strong style="color: #5ca1e2;">"Редактировать"</strong>. После внесения корректных данных нужно будет нажать кнопку <strong style="color: #5ca1e2;">"Сохранить"</strong></p>
+    </div>
+    <div class="span10">
+        <div class="span5 pull-left clear_mp">
+            <img src="@Url.Content("~/Images/cabinet_instr_fiz.png")"/>
+        </div>
+        <div class="span5 pull-right">
+            <img src="@Url.Content("~/Images/cabinet_instr_ul.png")"/>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-large btn-primary" data-dismiss="modal">@HelpViewsStrings.ButtonClose</button>
+</div>

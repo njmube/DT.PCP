@@ -1,0 +1,65 @@
+﻿@using DT.PCP.Web.Resources.Views.Cabinet
+@model DT.PCP.Web.ViewModels.Cabinet.UserInfoViewModel
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">@CabinetViewsStrings.FormEditInfo</h3>
+</div>
+@using (Html.BeginForm("Edit", "Cabinet", FormMethod.Post, new { id = "update_user_info" }))
+{
+    <div class="modal-body">
+        <div class="row-fluid">
+
+            <div class="pull-left">
+                <div>
+                    @Html.LabelFor(m => m.FirstName)
+                    @Html.TextBoxFor(m => m.FirstName)
+                </div>
+                <div>
+                    @Html.LabelFor(m => m.MiddleName)
+                    @Html.TextBoxFor(m => m.MiddleName)
+                </div>
+
+                <div>
+                    @Html.LabelFor(m => m.LastName)
+                    @Html.TextBoxFor(m => m.LastName)
+                </div>
+
+                <div>
+                    @Html.LabelFor(m => m.PhoneNumber)
+                    @Html.TextBoxFor(m => m.PhoneNumber)
+                </div>
+            </div>
+
+            <div class="pull-right">
+                <div>
+                    @Html.LabelFor(m => m.CarMark)
+                    @Html.TextBoxFor(m => m.CarMark)
+                </div>
+                <div>
+                    @Html.LabelFor(m => m.CarColor)
+                    @Html.TextBoxFor(m => m.CarColor)
+                </div>
+
+                <div>
+                    @Html.LabelFor(m => m.Email)
+                    @Html.TextBoxFor(m => m.Email)
+                </div>
+            </div>
+            <div class="span clear_mp">
+                @Html.LabelFor(m => m.CarRegistrationAddress)
+                @Html.TextAreaFor(m => m.CarRegistrationAddress, new { @class = "wide" })
+            </div>
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m=>m.IsEmailSubscribed)
+            @Html.HiddenFor(m=>m.IsSmsSubscribed)
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <input class="btn btn-large btn-primary" id="update_user_info" type="submit" value="@CabinetViewsStrings.ButtonSaveEditInfo" />
+    </div>
+}
+
+<script src="~/Scripts/jquery.maskedinput.min.js"></script>
+

@@ -1,0 +1,85 @@
+﻿@using DT.PCP.Web.Core
+@using DT.PCP.Web.Resources.Views.Cabinet
+@model DT.PCP.Web.ViewModels.Cabinet.CarViolationDetailsViewModel
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">@CabinetViewsStrings.ModalDetailsHeader №<span id="detail_order_number">@Html.DisplayTextFor(m => m.OrderNumber)</span> @CabinetViewsStrings.ModalDetailsHeaderAdj @Html.DisplayTextFor(m => m.FixationDateTime)</h3>
+</div>
+
+<div class="modal-body" style="overflow: hidden">
+    <div class="row-fluid">
+	<div class="pull-left span4">
+		<div class="span12">
+           <img id="violation_info">
+        </div>
+	</div>
+	<div style="line-height: 26px; font-size: 16px; position: relative;" class="pull-right span8">
+		<div class="span12" style="margin-left: 15px; padding-right: 10px;">
+                <span class="pull-left" style="font-size: 19px;"><strong>@Html.DisplayTextFor(m => m.ViolationType)</strong></span>
+            </div>
+            <div class="span12">
+                <span class="pull-left">@CabinetViewsStrings.ContentDetailByAddress</span>
+                <span class="pull-left" style="margin-left: 5px"><strong>@Html.DisplayTextFor(m => m.PostAddress)</strong></span>
+            </div>
+            <div class="span12" style="margin-top: 10px;">
+                <span class="pull-left">@CabinetViewsStrings.ContentDetailViolator <strong>@Html.DisplayTextFor(m => m.FullName)</strong></span>
+            </div>
+            
+            <div class="span12" style="margin-top: 10px;">
+                <span class="pull-left">@CabinetViewsStrings.ContentDetailCarNumber</span>
+                <span class="pull-left" style="margin-left: 5px;"><strong>@Html.DisplayTextFor(m => m.Number)</strong></span>
+                <span class="pull-left" style="margin-left: 5px;">@Html.DisplayTextFor(m => m.Mark), @Html.DisplayTextFor(m => m.Color)</span>
+            </div>
+            
+            <div class="pull-right" style="margin-top: -40px; margin-bottom: -20px; margin-right: 20px;">
+               <img src="@Url.Content("~/Images/" + Model.StatusImageName)" style="height: 160px"/>
+            </div>
+            <div class="span112 off1set" style="position: absolute; bottom: 0; padding-right: 10px;">
+                <span class="pull-left" style="font-size: 20px;"><strong>@CabinetViewsStrings.ContentDetailViolationCost:</strong></span>
+                <span class="pull-right" style="font-size: 20px;"><strong>@Html.DisplayTextFor(m => m.Cost) KZT</strong></span>
+            </div>
+	</div>
+</div>
+    
+
+   @* <div class="span9  clear_mp">
+        <div class="span3 clear_mp">
+            <img id="violation_info" />
+        </div>
+
+        <div class="span6" style="position: relative; height: 250px; position: relative; height: 250px; line-height: 26px; font-size: 16px;">
+            <div class="span6">
+                <span class="pull-left" style="font-size: 19px;"><strong>@Html.DisplayTextFor(m => m.ViolationType)</strong></span>
+            </div>
+            <div class="span6">
+                <span class="pull-left">по адресу</span>
+                <span class="pull-left" style="margin-left: 5px"><strong>@Html.DisplayTextFor(m => m.PostAddress)</strong></span>
+            </div>
+            <div class="span6" style="margin-top: 10px;">
+                <span class="pull-left">Нарушитель <strong>@Html.DisplayTextFor(m => m.FullName)</strong></span>
+            </div>
+           
+            <div class="span6" style="margin-top: 10px;">
+                <span class="pull-left">Автомобиль №</span>
+                <span class="pull-left" style="margin-left: 5px;"><strong>@Html.DisplayTextFor(m => m.Number)</strong></span>
+                <span class="pull-left" style="margin-left: 5px;">@Html.DisplayTextFor(m => m.Mark), @Html.DisplayTextFor(m => m.Color)</span>
+            </div>
+            
+            <div class="pull-right" style="margin-top: -40px;">
+                <img src="@Url.Content("~/Images/" + Model.StatusImageName)" style="height: 180px"/>
+            </div>
+            <div class="span6 offset" style="position: absolute; bottom: 0;">
+                <span class="pull-left" style="font-size: 20px;"><strong>Штраф:</strong></span>
+                <span class="pull-right" style="font-size: 20px;"><strong>@Html.DisplayTextFor(m => m.Cost) KZT</strong></span>
+            </div>
+        </div>
+
+    </div>*@
+</div>
+<div class="modal-footer">
+    <input id="pay_from_detail" class="btn btn-large btn-primary" value="@CabinetViewsStrings.ModalDetailButtonPay" />
+    <input class="btn btn-large btn-primary" data-dismiss="modal" aria-hidden="true" value="@CabinetViewsStrings.ButtonClose" />
+
+</div>
+
+

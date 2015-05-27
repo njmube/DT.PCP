@@ -1,0 +1,140 @@
+﻿@using DT.PCP.Web.ViewModels.Cabinet
+@using Lib.Web.Mvc.JQuery.JqGrid
+@model bool
+
+@{
+    var grid = new JqGridHelper<CarViolationViewModel>("myGrid",
+      dataType: JqGridDataTypes.Json,
+      methodType: JqGridMethodTypes.Post,
+      pager: true,
+
+      sortingName: "ViolationType",
+      sortingOrder: JqGridSortingOrders.Asc,
+      url: "/Ru/Cabinet/Violation?showNotPayed=" + Model,
+      viewRecords: true,
+      rowsList: new List<int>() { 10, 20, 30, 50, 100 },
+      loadOnce: true,
+      multiSelect: true,
+      rowsNumber: 20,
+      autoWidth:true,
+     //autoWidth: Model,
+     //width: 1370,
+     groupingEnabled: true,
+     userDataOnFooter: true,
+     footerEnabled: true,
+     groupingView: new JqGridGroupingView { ColumnShow = new[] { false }, Fields = new[] { "ViolationType" }, DataSorted = true },
+      beforeSelectRow: "$.denySelectRow",
+      onSelectAll: "$.selectAllHandler",
+      loadComplete: "$.disableRows"
+    ).FilterToolbar(new JqGridFilterToolbarOptions() { StringResult = true })
+    .Navigator(new JqGridNavigatorOptions() { Add = false, Delete = false, Edit = false, View = false, Refresh = false, Search = false });
+    
+}
+
+@grid.GetHtml()
+@if (Model)
+{
+    <div class="pull-right" style="margin-top: 15px">
+        <button id="pay_penalty" class="btn btn-large btn-primary span">Оплатить</button>
+    </div>
+}
+<link href="~/Content/jqGrid.bootstrap.css" rel="stylesheet" />
+<script type="text/javascript">
+    //TODO вынести в отдельный файл
+
+    $.customButton = function () {
+        return "<a class='btn btn-link clear_mp' title='Детали нарушения' onclick=javascript:showDetails(this);><img style='height:16px' src='/Images/glaz.png'/></a>";
+
+    };
+
+    $.denySelectRow = function (e, s) {
+
+        if (s.target.nodeName.toLowerCase() === "td")
+            showDetails(null, e);
+        
+        var escapedRowId = escapeCharacter(e);
+        if ($("#jqg_myGrid_" + escapedRowId).attr("checked") != 'checked' && !$('#' + escapedRowId).hasClass('selected_row_grid')) {
+            return false;
+        }
+        
+        if (s.target.nodeName.toLowerCase() === "input")
+            $('#' + escapedRowId).toggleClass('selected_row_grid');
+
+        return false;
+    };
+
+    $.selectAllHandler = function () {
+        var ids = $("#myGrid").jqGrid('getDataIDs');
+
+
+        for (var i = 0; i < ids.length; i++) {
+            var rowId = ids[i];
+            var isPayed = jQuery("#myGrid").jqGrid('getCell', ids[i], 'IsPayed');
+
+            if (isPayed === 'true') {
+
+                var escapedRowId = escapeCharacter(rowId);
+                $("#jqg_myGrid_" + escapedRowId).attr("checked", false);
+            }
+        }
+    };
+
+    $.disableRows = function () {
+        var ids = jQuery("#myGrid").jqGrid('getDataIDs');
+
+        for (var i = 0; i < ids.length; i++) {
+            var rowId = ids[i];
+            var isPayed = jQuery("#myGrid").jqGrid('getCell', ids[i], 'IsPayed');
+
+            if (isPayed === 'true') {
+                var escapedRowId = escapeCharacter(rowId);
+                $("#jqg_myGrid_" + escapedRowId).attr("disabled", true);
+            }
+        }
+    };
+
+    function showDetails(obj, rId) {
+        var id, isPayed, escapedRowId;
+       
+        if (typeof rId === 'undefined') {
+            id = $(obj).closest('tr').attr('id');
+             escapedRowId = escapeCharacter(id);
+            isPayed = $(obj).closest('tr').find("#jqg_myGrid_" + escapedRowId).attr('disabled');
+        } else {
+            id = rId;
+             escapedRowId = escapeCharacter(id);
+            isPayed = $("#jqg_myGrid_" + escapedRowId).attr('disabled');
+        }
+        
+        var editUrl = getCultureUrl('/cabinet/details?orderNumber=' + id);
+        showModal(editUrl, function () {
+            if (isPayed === "disabled")
+                $('#pay_from_detail').hide();
+            $('#modal').addClass('modal-violation');
+            $('#modal').css('width', '935px').css('margin-left', -($('#modal').width() / 2)).css('margin-right', 'auto');
+            loadViolationImage(id);
+
+        });
+    }
+
+    function loadViolationImage(orderNumber) {
+        $.ajax({
+            type: 'GET',
+            url: '/Ru/Cabinet/GetViolationImage',
+            data: { orderNumber: orderNumber },
+            async: false,
+            success: function (data) {
+                if (data != '') {
+                    var vImg = $('#violation_info');
+                    vImg.attr('src', data.Image);
+                }
+            }
+        });
+
+    }
+
+    $(document).ready(function () {
+        @grid.GetJavaScript()
+    });
+</script>
+

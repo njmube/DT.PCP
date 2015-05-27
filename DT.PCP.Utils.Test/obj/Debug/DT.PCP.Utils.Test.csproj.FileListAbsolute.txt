@@ -1,0 +1,4 @@
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Utils.Test\bin\Debug\DT.PCP.Utils.Test.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Utils.Test\bin\Debug\DT.PCP.Utils.Test.pdb
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Utils.Test\obj\Debug\DT.PCP.Utils.Test.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Utils.Test\obj\Debug\DT.PCP.Utils.Test.pdb

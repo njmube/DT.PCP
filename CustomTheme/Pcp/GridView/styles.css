@@ -1,0 +1,519 @@
+.dxgvControl_Pcp,
+.dxgvDisabled_Pcp
+{
+	border: 1px solid #9da0aa;
+	font: 15px "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #f1f2f6;
+	color: #201f35;
+	font-weight:400;
+	cursor: default;
+}
+.dxgvDisabled_Pcp
+{
+	color: #b1b1b8;
+}
+.dxgvControl_Pcp a
+{
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxgvControl_Pcp a:hover
+{
+	text-decoration: underline;
+}
+.dxgvDisabled_Pcp a
+{
+	color: #b1b1b8;
+}
+.dxgvLoadingPanel_Pcp
+{
+	font: 15px "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #201f35;
+	background: White none;
+	border: 1px solid #9da0aa;
+}
+.dxgvLoadingPanel_Pcp td
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+.dxgvLoadingPanelStatusBar_Pcp
+{
+	background-color: Transparent;
+}
+.dxgvLoadingPanelStatusBar_Pcp td
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 0 2px;
+}
+.dxgvFilterPopupWindow_Pcp
+{
+	color: #201f35;
+	font: 15px "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	border: 1px solid #9da0aa;
+}
+.dxgvFilterPopupItemsArea_Pcp
+{
+	color: #201f35;
+	background-color: White;
+}
+.dxgvFilterPopupButtonPanel_Pcp
+{
+	background-color: #ebecef;
+	border-top: 1px solid #9da0aa;
+	color: #201f35;
+}
+
+.dxgvFilterPopupItem_Pcp td.dxgv,
+.dxgvFilterPopupActiveItem_Pcp td.dxgv,
+.dxgvFilterPopupSelectedItem_Pcp td.dxgv
+{
+	padding: 3px 2px 3px 3px;
+	cursor: default;
+	white-space: nowrap;
+}
+.dxgvFilterPopupActiveItem_Pcp
+{
+	background: #e2eafd none;
+	color: #201f35;
+}
+.dxgvFilterPopupSelectedItem_Pcp
+{
+	background: #eff0f2 none;
+	color: #201f35;
+}
+
+.dxgvTable_Pcp
+{
+	background-color: White;
+	border-width: 0;
+	border-collapse: separate!important;
+	overflow: hidden;
+	color: #201f35;
+}
+.dxgvInlineEditRow_Pcp,
+.dxgvDataRow_Pcp
+{
+}
+.dxgvInlineEditRow_Pcp td.dxgv
+{
+	border-bottom: 1px solid #d9dae0;
+	border-right: 1px solid #d9dae0;
+}
+.dxgvInlineEditRow_Pcp td.dxgvIndentCell
+{
+	background: #f9f9fc none;
+}
+.dxgvInlineEditRow_Pcp .dxgvCommandColumn_Pcp
+{
+	background: #f9f9fc none;
+}
+.dxgvDataRowAlt_Pcp
+{
+	background-color: #f7f4fd;
+}
+.dxgvFilterRow_Pcp
+{
+	background-color: #ebecef;
+}
+.dxgvEditForm_Pcp
+{
+	background-color: #f9f9fc;
+}
+.dxgvEditForm_Pcp td.dxgv
+{
+	border-bottom: 1px solid #d9dae0;
+	padding: 8px 10px 10px;
+}
+.dxgvEditForm_Pcp td.dxgvIndentCell
+{
+	background: #f9f9fc none;
+	border-right: 1px Solid #d9dae0;
+	border-left: 1px Solid #d9dae0;
+	border-top-width: 0px;
+}
+.dxgvSelectedRow_Pcp
+{
+	background-color: #eff0f2;
+	color: #201f35;
+}
+.dxgvFocusedRow_Pcp
+{
+	background: #d9e4fd url('gvFocusedBack.png') repeat-x left top;
+	color: #201f35;
+}
+.dxgvSelectedRow_Pcp .dxgvCommandColumn_Pcp a,
+.dxgvFocusedRow_Pcp .dxgvCommandColumn_Pcp a
+{
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxgvSelectedRow_Pcp .dxgvCommandColumn_Pcp a:hover,
+.dxgvFocusedRow_Pcp .dxgvCommandColumn_Pcp a:hover
+{
+	text-decoration: underline;
+}
+
+.dxgvPreviewRow_Pcp
+{
+	background-color: #f7f7f8;
+	color: #777777;
+}
+.dxgvDetailCell_Pcp,
+.dxgvPreviewRow_Pcp td.dxgv,
+.dxgvEmptyDataRow_Pcp td.dxgv
+{
+	padding: 20px 2px 20px 4px;
+	border-bottom: 1px solid #d9dae0;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+.dxgvDetailCell_Pcp
+{
+	border-bottom-color: #d9dae0;
+}
+.dxgvPreviewRow_Pcp td.dxgv
+{
+	padding: 10px 10px 10px 15px;
+}
+.dxgvDetailCell_Pcp
+{
+	padding: 16px 18px;
+}
+.dxgvDetailRow_Pcp td.dxgvIndentCell
+{
+	padding-right: 0px;
+	border-bottom: 1px solid #d9dae0;
+}
+.dxgvEmptyDataRow_Pcp
+{
+	color: #777777;
+}
+.dxgvEmptyDataRow_Pcp td.dxgv
+{
+	border-bottom: 1px solid #d9dae0;
+	text-align: center;
+}
+
+.dxgvEditFormDisplayRow_Pcp td.dxgv,
+.dxgvDataRow_Pcp td.dxgv,
+.dxgvDataRowAlt_Pcp td.dxgv,
+.dxgvSelectedRow_Pcp td.dxgv,
+.dxgvFocusedRow_Pcp td.dxgv
+{
+	overflow: hidden;
+	border-bottom: 1px solid #d9dae0;
+	border-right: 1px solid #d9dae0;
+	border-top-width: 0;
+	border-left-width: 0;
+	padding: 4px 6px;
+}
+.dxgvEditFormDisplayRow_Pcp
+{
+}
+.dxgvEditFormDisplayRow_Pcp td.dxgv
+{
+}
+.dxgvEditFormDisplayRow_Pcp td.dxgvIndentCell
+{
+	background: #f9f9fc none;
+	border-right: 1px Solid #d9dae0;
+	border-left: 1px Solid #d9dae0;
+	border-top-width: 0px;
+}
+
+.dxgvEditingErrorRow_Pcp
+{
+	background-color: #ebecef;
+	color: #ba1717;
+}
+.dxgvEditingErrorRow_Pcp td.dxgv
+{
+	white-space: pre-wrap;
+	border-bottom: 1px solid #d9dae0;
+	border-right-width: 0;
+	border-top-width: 0;
+	border-left-width: 0;
+	padding: 6px 10px;
+}
+
+.dxgvFilterRow_Pcp td.dxgv
+{
+	border-bottom: 1px solid #abacb9;
+	border-right-width: 0;
+	border-top-width: 0;
+	border-left-width: 0;
+	padding: 2px 3px 2px 2px;
+	overflow: hidden;
+}
+.dxgvGroupRow_Pcp
+{
+	background-color: #f9f9fc;
+}
+.dxgvFocusedGroupRow_Pcp
+{
+	background: #d9e4fd url('gvFocusedBack.png') repeat-x left top;
+	color: #201f35;
+}
+.dxgvGroupRow_Pcp td.dxgv,
+.dxgvFocusedGroupRow_Pcp td.dxgv
+{
+	border: 0 none;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-bottom: 1px solid #d9dae0;
+	padding: 4px 6px;
+}
+.dxgvFocusedRow_Pcp td.dxgvIndentCell,
+.dxgvFocusedGroupRow_Pcp td.dxgvIndentCell,
+.dxgvSelectedRow_Pcp td.dxgvIndentCell
+{
+	background: #f9f9fc!important;
+	border-right: 1px solid #d9dae0;
+	border-left: 1px solid #d9dae0;
+	border-top-width: 0px;
+}
+.dxgvHeaderPanel_Pcp
+{
+	background-color: #ebecef;
+	color: #201f35;
+	padding: 8px 6px;
+	border-bottom: 1px solid #abacb9;
+}
+
+.dxgvHeader_Pcp
+{
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 5px 6px;
+	border: 1px solid #cacbd3;
+	background: #f2f3f4 url('gvHeaderBack.png') repeat-x left top;
+	overflow: hidden;
+	font-weight: normal;
+	text-align: left;
+}
+.dxgvHeader_Pcp,
+.dxgvHeader_Pcp table
+{
+	color: #201f35;
+}
+.dxgvHeader_Pcp td
+{
+	white-space: nowrap;
+}
+.dxgvHeader_Pcp a
+{
+	color: #1b3f91;
+	text-decoration: underline;
+}
+.dxgvCustomization_Pcp,
+.dxgvPopupEditForm_Pcp
+{
+	padding: 0;
+	margin: 0;
+}
+.dxgvPopupEditForm_Pcp .dxgvEditingErrorRow_Pcp .dxgv
+{
+	border-bottom-width: 0;
+}
+.dxgvGroupPanel_Pcp
+{
+	color: #201f35;
+	background: #ebecef url('gvGroupPanelBack.png') no-repeat right top;
+	border-bottom: 1px solid #cacbd3;
+	padding: 7px 6px;
+	white-space: nowrap;
+}
+.dxgvFooter_Pcp
+{
+	background-color: #f9f9fc;
+	white-space: nowrap;
+}
+.dxgvFooter_Pcp td.dxgv
+{
+	padding: 6px;
+	border-bottom: 1px solid #d9dae0;
+	border-right-width: 0;
+}
+.dxgvGroupFooter_Pcp
+{
+	background-color: #f9f9fc;
+}
+.dxgvGroupFooter_Pcp td.dxgv
+{
+	padding: 6px;
+	border-bottom: 1px solid #d9dae0;
+	border-right-width: 0;
+	white-space: nowrap;
+}
+.dxgvDataRow_Pcp td.dxgvIndentCell,
+.dxgvGroupRow_Pcp td.dxgvIndentCell,
+.dxgvGroupFooter_Pcp td.dxgvIndentCell
+{
+	background-color: #f9f9fc;
+	border-right: 1px solid #d9dae0;
+	border-left: 1px solid #d9dae0;
+	border-top-width: 0px;
+}
+
+.dxgvTitlePanel_Pcp,
+.dxgvTable_Pcp caption
+{
+	font-weight: normal;
+	padding: 3px 3px 5px;
+	text-align: center;
+	background: #f2f3f4 url('gvTitleBack.png') repeat-x left top;
+	color: #201f35;
+	border-bottom: 1px solid #9da0aa;
+}
+.dxgvLoadingDiv_Pcp
+{
+	background-color: Gray;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+.dxgvStatusBar_Pcp
+{
+	background: #f9f9fc none;
+	border-top: 1px solid #cacbd3;
+}
+.dxgvStatusBar_Pcp tr.dxgv
+{
+	height: 20px;
+}
+.dxgvCommandColumn_Pcp
+{
+	padding: 2px;
+}
+.dxgvCommandColumn_Pcp a
+{
+	margin: 0px 3px 0px 0px;
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxgvCommandColumn_Pcp a:hover
+{
+	text-decoration: underline;
+}
+
+.dxgvCommandColumnItem_Pcp
+{
+}
+.dxgvEditFormTable_Pcp
+{
+	padding: 2px 6px 6px 4px;
+	color: #201f35;
+}
+.dxgvEditFormTable_Pcp a
+{
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxgvEditFormTable_Pcp a:hover
+{
+	text-decoration: underline;
+}
+
+.dxgvEditFormCaption_Pcp
+{
+	padding: 4px 4px 4px 10px;
+	white-space: nowrap;
+}
+
+.dxgvInlineEditCell_Pcp
+{
+	padding: 1px;
+}
+
+.dxgvEditFormCell_Pcp
+{
+	padding: 4px;
+	border-width: 0;
+}
+
+.dxgvPagerTopPanel_Pcp,
+.dxgvPagerBottomPanel_Pcp
+{
+	background: #f1f2f6 url('gvPagerPanelBack.png') repeat-x left top;
+}
+.dxgvDetailButton_Pcp
+{
+}
+
+.dxgvFilterBar_Pcp
+{
+	border-top: 1px solid #cacbd3;
+	background: #f9f9fc none;
+}
+.dxgvFilterBar_Pcp a
+{
+	color: #1b3f91;
+	text-decoration: underline;
+}
+.dxgvFilterBarCheckBoxCell_Pcp
+{
+	padding: 0 7px 0 3px;
+}
+.dxgvFilterBarImageCell_Pcp
+{
+	padding: 0 1px 0 3px;
+	cursor: pointer;
+}
+.dxgvFilterBarExpressionCell_Pcp
+{
+	padding: 5px 5px 8px 0;
+	white-space: nowrap;
+}
+.dxgvFilterBarClearButtonCell_Pcp
+{
+	padding: 5px 6px 8px;
+}
+.dxgvFilterBuilderMainArea_Pcp
+{
+	background: white none;
+	padding: 6px 2px;
+} 
+.dxgvFilterBuilderButtonArea_Pcp
+{
+	background: #ebecef none;
+	border-top: 1px solid #abacb9;
+	padding: 6px;
+	white-space: nowrap;
+}
+
+.dxgvDataRowHover_Pcp
+{
+	background: #e2eafd none;
+	color: #201f35;
+}
+
+
+.dxgvControl_Pcp .dxpControl_Pcp td.dxpCtrl_Pcp, 
+.dxgvDisabled_Pcp .dxpControl_Pcp td.dxpCtrl_Pcp,
+.dxgvControl_Pcp .dxpLite_Pcp,
+.dxgvDisabled_Pcp .dxpLite_Pcp
+{
+	padding-top: 4px;
+}
+.dxgvControl_Pcp .dxgvHFSAC
+{
+    padding: 6px 0 0 5px;
+}
+.dxgvControl_Pcp .dxgvHFSC
+{
+    padding: 6px 0 5px;
+}
+.dxgvControl_Pcp .dxgvHFSC div
+{
+    height: 1px;
+    background: #9DA0AA;
+}
+
+/* Removes flicking in iOS Safari*/
+.dxgvTable_Pcp
+{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}

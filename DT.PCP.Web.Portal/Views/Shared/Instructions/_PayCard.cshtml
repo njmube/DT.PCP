@@ -1,0 +1,40 @@
+﻿@using DT.PCP.Web.Resources.Views.Shared
+@{
+    ViewBag.Title = "Как оплатить нарушения с помощью платежных карт?";
+}
+
+<div class="span12">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>Как оплатить нарушения с помощью банковских карт?</h1>
+    </header>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>
+<div class="span12">
+    <p>После выбора нарушения(-ний) доступна оплата при помощи банковских карт.</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/pay-way.png")"/>
+</div>
+<div class="span12">
+    <p>К оплате принимаются карты Visa, MasterCard, American Express. После выбора оплаты банковской картой отображается окно платежной системы ePay, для ввода данных о карте для проведения платежа.</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/epay-form.png")"/>
+</div>
+<div class="span12">
+    <p>После ввода сведений о карте, на указанный email приходит ваучер об оплате нарушения(-ний) </p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/vaucher.png")"/>
+</div>
+<div class="span12">
+    <p>Также после совершения оплаты в платежной системе на тот же email приходит уведомление о совершении оплаты от ePay</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/epay-email.png")"/>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>

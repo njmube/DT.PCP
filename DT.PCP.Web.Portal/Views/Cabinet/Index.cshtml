@@ -1,0 +1,27 @@
+﻿@using DT.PCP.Web.Resources.Views.Cabinet
+@{
+    ViewBag.Title = "Личный кабинет";
+}
+<div class="row">
+    <div class="span12">
+        <header style="text-align: center; margin-bottom: 35px">
+            <h1>@CabinetViewsStrings.CabinetTitle</h1>
+        </header>
+    </div>
+</div>
+
+<ul class="nav nav-tabs">
+    <li class="active">
+        <a href="/cabinet/info">@CabinetViewsStrings.TabGeneralInfo</a>
+    </li>
+    <li>
+        <a href="/cabinet/violation">@CabinetViewsStrings.TabViolationList</a>
+    </li>
+</ul>
+@*<div class="row clear_mp">*@
+    <div id="tab_content" class="row pull-left clear_mp">
+    </div>
+    
+@*</div>*@
+
+<script src="~/Scripts/Pcp/Cabinet.js"></script>

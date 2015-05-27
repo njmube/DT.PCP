@@ -1,0 +1,9 @@
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\bin\Debug\DT.PCP.Epay.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\bin\Debug\DT.PCP.Epay.pdb
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\bin\Debug\DT.PCP.Logging.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\bin\Debug\NLog.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\bin\Debug\DT.PCP.Logging.pdb
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\bin\Debug\NLog.xml
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\obj\Debug\DT.PCP.Epay.csprojResolveAssemblyReference.cache
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\obj\Debug\DT.PCP.Epay.dll
+C:\_repos\PCP-Development\Sources\DT.PCP\DT.PCP.Epay\obj\Debug\DT.PCP.Epay.pdb

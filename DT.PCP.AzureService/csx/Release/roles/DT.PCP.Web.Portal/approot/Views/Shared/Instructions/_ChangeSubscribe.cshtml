@@ -1,0 +1,28 @@
+﻿@using DT.PCP.Web.Resources.Views.Shared
+@{
+    ViewBag.Title = "Как изменить данные подписки на уведомления?";
+}
+
+<div class="span12">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>Как изменить данные подписки на уведомления?</h1>
+    </header>
+</div>
+<div class="row-fluid">
+     @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>
+<div class="span12">
+    <p>При необходимости можно изменить указанные ранее данные подписки на уведомления. Для этого необходимо зайти в профиль и нажать кнопку <strong style="color: #5ca1e2;">"Уведомления"</strong></p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/notification-change-enter.png")"/>
+</div>
+<div class="span12">
+    <p>При нажатии на нее отображается форма данных для подписки</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/notification-change.png")"/>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>

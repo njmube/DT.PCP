@@ -1,0 +1,86 @@
+﻿@using DT.PCP.Web.Resources.Views.Home
+@model DT.PCP.Web.ViewModels.Home.HomeViewModel
+@{
+    ViewBag.Title = HomeViewsStrings.TitleHome;
+}
+
+<script src="~/Scripts/PCP/Home.js"></script>
+
+<div class="row-fluid">
+
+    <div class="span7 ipad-wide">
+        <header>
+            <hgroup>
+                <h1 style="font-size: 40px">@HomeViewsStrings.ContentWelcome</h1>
+                <h1 style="font-size: 40px; margin-top: -15px;">@HomeViewsStrings.ContentWelcomeTo</h1>
+            </hgroup>
+        </header>
+        <div class="create-account-fields pull-left landscape-center" style="margin-right: 15px;">
+            @Html.Partial("Login", Model)
+            <p style="text-align: center; width: 415px; line-height: 15px; margin-bottom: 0">@HomeViewsStrings.ContentOr</p>
+            @Html.Partial("LoginbyOrderNumber", Model)
+        </div>
+
+        <div class="clear_mp span2 custom-span2" style="margin-top: 30px ! important; text-align: center;">
+            <a id="cabinet" class="btn span btn-large btn-primary" style="margin-bottom: 0px; margin-left: 0px;">@HomeViewsStrings.ButtonProfile</a>
+            <a href="@Url.Action("LoginBothInfo", "Help")" target="_blank" style="color: #5CA1E2">@HomeViewsStrings.ButtonHelpHowToLogin</a>
+        </div>
+
+    </div>
+    <div class="span5 ipad-shrink">
+        <img alt="car" src="@Url.Content("~/Images/car.png")">
+     
+    </div>
+    <hr />
+</div>
+<div class="row-fluid" style="text-align: justify; margin-bottom: 22px ! important;">
+    <p>@Html.Raw(HomeViewsStrings.ContentSiteDescription).</p>
+</div>
+<div class="row" style="margin-right: -500px; margin-left: -500px; border-bottom: 5px solid #DEDEDE;">&nbsp;</div>
+<div class="features" style="margin-top: 15px; text-align: justify">
+    <div class="span12 clear_mp">
+        <div class="span4 clear_mp">
+            <div class="feature">
+                <h3>
+                    <img src="@Url.Content("~/Images/main-card.png")" style="height: 32px; margin-right: 5px"/>
+                    @HomeViewsStrings.ContentCardPay</h3>
+                <p>@HomeViewsStrings.ContentCardPayDescription.</p>
+            </div>
+        </div>
+        <div class="span4">
+            <div class="feature">
+                <h3>
+                    <img src="@Url.Content("~/Images/main-terminal.png")" style="height: 32px; margin-right: 5px"/>@HomeViewsStrings.ContentTerminalPay</h3>
+                <p>@HomeViewsStrings.ContentTerminalDescription.</p>
+            </div>
+        </div>
+        <div class="span4">
+            <div class="feature">
+                <h3>
+                    <img src="@Url.Content("~/Images/main-notification.png")" style="height: 32px; margin-right: 5px"/>@HomeViewsStrings.ContentNotification</h3>
+                <p>@HomeViewsStrings.ContentNotificationDescription.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="features" style="margin-top: 15px; text-align: justify">
+        <div class="span12 clear_mp">
+            <div class="span4 clear_mp">
+                <div class="feature">
+                    <a href="@Url.Action("PayCardInfo", "Help")" target="_blank" style="color: #5CA1E2">@HomeViewsStrings.ButtonHelpHowToPay</a>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="feature">
+                    <a href="@Url.Action("PayTerminalInfo", "Help")" target="_blank" style="color: #5CA1E2">@HomeViewsStrings.ButtonHelpHowToPay</a>
+                </div>
+            </div>
+             <div class="span4">
+                 <div class="feature">
+                      <a href="@Url.Action("SubscribeInfo", "Help")" target="_blank" style="color: #5CA1E2">@HomeViewsStrings.ButtonHelpHowToSubscribe</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+</div>

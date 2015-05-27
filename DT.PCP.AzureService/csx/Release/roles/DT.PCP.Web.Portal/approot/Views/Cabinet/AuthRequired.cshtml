@@ -1,0 +1,11 @@
+﻿@using DT.PCP.Web.Resources.Views.Cabinet
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">@CabinetViewsStrings.ModalHeaderAuthRequired</h3>
+</div>
+<div class="modal-body">
+    <p class="text-justify">@CabinetViewsStrings.ContentAuthRequiredDescription.</p>
+</div>
+<div class="modal-footer">
+    <input class="btn btn-large btn-primary" onclick="location.href='/'" type="button" value="@CabinetViewsStrings.ButtonRedirectToHome" />
+</div>

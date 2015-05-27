@@ -1,0 +1,23 @@
+﻿
+footer {
+    display: none;
+}
+
+body {
+    width: 1224px;
+}
+.container {
+    width: 1224px;
+}
+
+img {
+    height: 370px;
+}
+
+#reformal_tab {
+    display: none;
+}
+
+.main-content {
+    background: none;
+}

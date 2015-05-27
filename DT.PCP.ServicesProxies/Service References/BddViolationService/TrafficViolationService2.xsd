@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.RTM.InfoCenter.Services" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.RTM.InfoCenter.Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TrafficViolationRequestData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LegalName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumberSRTS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secondname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransportNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrafficViolationRequestData" nillable="true" type="tns:TrafficViolationRequestData" />
+  <xs:complexType name="TrafficViolationServiceResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ResultCode" type="tns:ResultCodeEnum" />
+      <xs:element minOccurs="0" name="ResultMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrafficViolationDataList" nillable="true" type="tns:ArrayOfTrafficViolationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrafficViolationServiceResult" nillable="true" type="tns:TrafficViolationServiceResult" />
+  <xs:simpleType name="ResultCodeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="NonAuthentificationError" />
+      <xs:enumeration value="DatabaseConnectionError" />
+      <xs:enumeration value="RequestParametersError" />
+      <xs:enumeration value="InformationNotFound" />
+      <xs:enumeration value="RequestError" />
+      <xs:enumeration value="PrescriptionPaid" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResultCodeEnum" nillable="true" type="tns:ResultCodeEnum" />
+  <xs:complexType name="ArrayOfTrafficViolationData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrafficViolationData" nillable="true" type="tns:TrafficViolationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrafficViolationData" nillable="true" type="tns:ArrayOfTrafficViolationData" />
+  <xs:complexType name="TrafficViolationData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Color" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FineCost" type="xs:double" />
+      <xs:element minOccurs="0" name="FixationDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsLegalEntity" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRepeat" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumberSRTS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransportNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolationStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolationStatusEnum" type="tns:ViolationStatusEnum" />
+      <xs:element minOccurs="0" name="ViolationStatusKz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolationType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolationTypeKz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolationTypeShort" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolatorFirstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolatorFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolatorLastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViolatorSecondname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrafficViolationData" nillable="true" type="tns:TrafficViolationData" />
+  <xs:simpleType name="ViolationStatusEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OrderCreated" />
+      <xs:enumeration value="OrderPrinted" />
+      <xs:enumeration value="Canceled" />
+      <xs:enumeration value="NotifySended" />
+      <xs:enumeration value="Payed" />
+      <xs:enumeration value="PayChecked" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ViolationStatusEnum" nillable="true" type="tns:ViolationStatusEnum" />
+  <xs:complexType name="TransportOwnerData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Color" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsLegalEntity" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumberSRTS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OwnerFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OwnerFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OwnerLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OwnerSecondName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegisterAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransportNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransportYear" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransportOwnerData" nillable="true" type="tns:TransportOwnerData" />
+</xs:schema>

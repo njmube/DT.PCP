@@ -1,0 +1,49 @@
+﻿@using DT.PCP.Web.Resources.Views.Shared
+@{
+    ViewBag.Title = "Как оплатить нарушения с помощью терминала?";
+}
+
+<div class="span12">
+    <header style="text-align: center; margin-bottom: 35px">
+        <h1>Как оплатить нарушения с помощью терминала?</h1>
+    </header>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>
+<div class="span12">
+    <p>На терминале необходимо выбрать раздел <strong style="color: #5ca1e2;">&laquo;Оплата услуг&raquo;</strong></p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/terminal-1p.png")"/>
+</div>
+<div class="span12">
+    <p>Затем необходимо выбрать раздел <strong style="color: #5ca1e2;">&laquo;Другие услуги&raquo;</strong></p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/terminal-2p.png")"/>
+</div>
+<div class="span12">
+    <p>Затем необходимо выбрать раздел <strong style="color: #5ca1e2;">&laquo;Оплата нарушений&raquo;</strong></p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/terminal-3p.png")"/>
+</div>
+<div class="span12">
+    <p>Далее, необходимо ввести номер предписания.</p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/terminal-4p.png")"/>
+</div>
+<div class="span12">
+    <p>Внесите необходимую сумму, проверьте заполнение полей и нажмите кнопку <strong style="color: #5ca1e2;">&laquo;Оплатить&raquo;</strong></p>
+</div>
+<div class="span12" style="text-align: center">
+    <img src="@Url.Content("~/Images/terminal-5p.png")"/>
+</div>
+<div class="span12">
+    <p><strong style="color: #5ca1e2;">Внимание!</strong> Терминал сдачи не выдает. Остаток средств после оплаты нарушения будет переведен на баланс мобильного телефона, указанного при оплате</p>
+</div>
+<div class="row-fluid">
+    @Html.ActionLink(InstructionsViewStrings.ButtonContents, "Index", "Support",null, new {@class = "btn btn-primary btn-large pull-right"})
+</div>

@@ -1,0 +1,28 @@
+﻿@using DT.PCP.Web.Core
+@using DT.PCP.Web.Resources.Views.Shared
+@if (Request.IsAuthenticated)
+{
+    <text>
+
+    <li>
+        @Html.ActionLink(SharedViewsStrings.NavigationViolationList, "ViolationList", "Cabinet", null, new { style = "font-weight:400;" })
+    </li>
+
+    <li>
+        @Html.ActionLink(SharedViewsStrings.NavigationProfile, "Info", "Cabinet", null, new { style = "font-weight:400;" })
+    </li>
+
+    @* <li>
+        <span style="line-height: 43px">
+            @SharedViewsStrings.Greeting, @Html.ActionLink(PcpSession.CurrentUser.DisplayName, "Index", "Cabinet", null, new { style = "font-weight:400;" })|
+        </span>
+    </li>*@
+    <li>
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", style = "margin-left: 15px" }))
+        {
+            <a style="font-weight: 400; line-height: 43px;" href="javascript:document.getElementById('logoutForm').submit()">@SharedViewsStrings.LoggOff</a>
+        }
+    </li>
+
+    </text>
+}

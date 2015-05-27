@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EF48B39-FC9B-4303-B666-5C77435F5E48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DT.PCP.ViolationNotificationWorker</RootNamespace>
+    <AssemblyName>DT.PCP.ViolationNotificationWorker</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RoleType>Worker</RoleType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.0.1\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration">
+      <HintPath>..\packages\Autofac.3.0.1\lib\net40\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\DT.PCP.Web.Portal\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.1.7.0.0\lib\net35-full\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\packages\RazorEngine.3.2.0\lib\net40\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckNewViolationJob.cs" />
+    <Compile Include="IJobFactory.cs" />
+    <Compile Include="JobFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NotificationWorkerRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DT.PCP.BussinesServices.Impl\DT.PCP.BussinesServices.Impl.csproj">
+      <Project>{E69850ED-75A7-4C59-A0FE-88CBACDD8046}</Project>
+      <Name>DT.PCP.BussinesServices.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.BussinesServices\DT.PCP.BussinesServices.csproj">
+      <Project>{2B89F184-4397-4F32-9F1E-BFC82619C176}</Project>
+      <Name>DT.PCP.BussinesServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.CommonDomain\DT.PCP.CommonDomain.csproj">
+      <Project>{469AB71E-E75C-4ABD-BAA5-796ABB201C3E}</Project>
+      <Name>DT.PCP.CommonDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.DataAccess.Impl\DT.PCP.DataAccess.Impl.csproj">
+      <Project>{15962698-211F-4B41-AAD0-F61F0BF04330}</Project>
+      <Name>DT.PCP.DataAccess.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.DataAccess\DT.PCP.DataAccess.csproj">
+      <Project>{229C0961-BFEC-4BF4-BB35-518EAC02BFDA}</Project>
+      <Name>DT.PCP.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.Domain\DT.PCP.Domain.csproj">
+      <Project>{4C1F51E6-0E8B-42C5-9856-DBE943B5D0C7}</Project>
+      <Name>DT.PCP.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.Logging\DT.PCP.Logging.csproj">
+      <Project>{9EF264B6-2B3D-4F06-9DE1-4E326DCB44F2}</Project>
+      <Name>DT.PCP.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.NotificationTemplate\DT.PCP.NotificationTemplate.csproj">
+      <Project>{FBFCC20E-5E8F-4E7F-8C42-9032EDA18DC8}</Project>
+      <Name>DT.PCP.NotificationTemplate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.ServicesProxies\DT.PCP.ServicesProxies.csproj">
+      <Project>{D73496BE-4D83-4503-A756-EF3C6BBCA722}</Project>
+      <Name>DT.PCP.ServicesProxies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.Utils.Impl\DT.PCP.Utils.Impl.csproj">
+      <Project>{870715CB-6EC5-4D1F-ABEE-76BB58D6DBCF}</Project>
+      <Name>DT.PCP.Utils.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.Utils\DT.PCP.Utils.csproj">
+      <Project>{FD939F03-A47F-4D2B-B9A5-3646D38AE85F}</Project>
+      <Name>DT.PCP.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DT.PCP.Web.ViewModels\DT.PCP.Web.ViewModels.csproj">
+      <Project>{7792E27B-1ACC-44FF-8EB4-E8F5FBCA2AB1}</Project>
+      <Name>DT.PCP.Web.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

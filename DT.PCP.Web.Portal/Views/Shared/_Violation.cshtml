@@ -1,0 +1,76 @@
+﻿@using System.Web.UI.WebControls
+@using DT.PCP.Web.ViewModels.Cabinet
+@using DevExpress.Web.ASPxGridView
+@using DevExpress.Web.Mvc.UI
+@model IEnumerable<CarViolationViewModel>
+
+@* ReSharper disable ConvertToLambdaExpression *@
+@Html.DevExpress().GridView(settings =>
+{
+    settings.Name = "grid";
+    settings.Theme = "Pcp";
+    settings.EnableTheming = true;
+    
+    settings.Settings.ShowColumnHeaders = false;
+    settings.Settings.ShowFooter = true;
+    settings.Width = Unit.Percentage(100);
+    settings.Height = Unit.Percentage(100);
+    settings.KeyFieldName = "OrderNumber";
+    settings.CallbackRouteValues = new { Controller = "Cabinet", Action = "ViolationList", payed = ViewData["Payed"]  };
+    settings.SettingsPager.Visible = true;
+    settings.SettingsPager.AlwaysShowPager = true;
+    settings.SettingsPager.PageSize = 10;
+    settings.SettingsPager.Mode = GridViewPagerMode.ShowPager;
+    settings.SettingsPager.PageSizeItemSettings.Visible = true;
+    settings.SettingsPager.PageSizeItemSettings.Items = new[] {"5", "10", "20", "50", "100"};
+    
+    
+    
+    // settings.Settings.ShowVerticalScrollBar = true;
+    //settings.ClientSideEvents.RowClick = "window.onRowClick";
+   
+    settings.Columns.Add("ViolationType");
+    settings.Columns.Add("FixationTime");
+    settings.Columns.Add("PostAddress");
+    settings.Columns.Add("Cost");
+    
+    settings.TotalSummary.Add(DevExpress.Data.SummaryItemType.Count, "ViolationType").DisplayFormat = "<strong>Итого: {0} </strong>";
+  
+    settings.TotalSummary.Add(DevExpress.Data.SummaryItemType.Sum, "Cost").DisplayFormat = "<div style=\"text-align:right\"><strong>Сумма: {0:N0} тг.</strong></div>";
+   
+    settings.SetDataRowTemplateContent(c =>
+        {
+            var input = "";
+        if (ViewData["Payed"] != null && (bool) ViewData["Payed"])
+        {
+           input =  "<input type=\"checkbox\" disabled=\"disabled\" name=" + DataBinder.Eval(c.DataItem, "OrderNumber") + " />";
+        }
+        else
+        {
+            input = "<input type=\"checkbox\" name=" + DataBinder.Eval(c.DataItem, "OrderNumber") + " />";
+        }
+        ViewContext.Writer.Write("<div style=\"p1adding:0px\">" +
+            "<table class=\"templateTable\" style=\"width:100%; border-bottom:1px solid #DDDDDD\">" +
+                "<tbody>" +
+                    "<tr>" +
+                    
+                        "<td rowspan=2 align=\"center\" style=\"width:3%\">" +
+                       input +
+                       
+                        "</td>" +
+                        "<td rowspan=2 align=\"center\" style=\"width:16%;border-right:1px solid #DDDDDD;border-left:1px solid #DDDDDD\">" + DataBinder.Eval(c.DataItem, "Status") + "</td>" +
+                        "<td>" + DataBinder.Eval(c.DataItem, "ViolationType") + "</td>" +
+                        "<td style=\"width:20%; vertical-align:top\" align=\"right\">" + DataBinder.Eval(c.DataItem, "FixationTime") + "</td>" +
+                    "</tr>" +
+                    "<tr>" +
+                        "<td>" + DataBinder.Eval(c.DataItem, "PostAddress") + "</td>" +
+                        "<td align=\"right\" style=\"font-weight:bold\">" + DataBinder.Eval(c.DataItem, "Cost") + " тг</td>" +
+                    "</tr>" +
+                "</tbody>" +
+            "</table>"
+                    );
+    });
+}).Bind(Model).GetHtml()
+
+@* ReSharper restore ConvertToLambdaExpression *@
+
